@@ -26,9 +26,9 @@ let currentQuestion = [];
 newQuestion = () => {
     availableQuestions = [...questions];
     let random = Math.floor(Math.random() * 3);
-    currentQuestion.push(availableQuestions.splice(random, 1));
-    console.log(currentQuestion);
-    console.log(availableQuestions)
+// Code to move item from one array to another - https://stackoverflow.com/questions/42374593/moving-javascript-object-from-one-array-to-another
+    currentQuestion = (availableQuestions.splice(random, 1));
+    console.log(currentQuestion[0].question)
 }
 
 newQuestion()
