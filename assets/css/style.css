@@ -38,16 +38,46 @@ h1 {
 /* BUTTONS */
 
 .game-btn {
-    outline: 4px outset black;
+    outline: 4px outset #333333;
     background-color: rgb(255, 223, 41);
     width: 85%;
     padding-top: 20px;
     text-decoration: none;
-    color: #000;
+    color: #333333;
     transition: outline 150ms ease-in-out, transform 150ms ease-in-out;
 }
 
 .game-btn:hover {
-    outline: 2px outset black;
+    outline: 2px outset #333333;
     transform: translateY(1px);
+}
+
+/* MODAL STYLING */
+
+.modal {
+    margin-top: 30vh;
+}
+
+.modal-content {
+    background-color: #2290fd;
+    border-radius: 0px;
+    outline: 4px outset #333333;
+}
+
+.modal-header {
+    border-bottom: none;
+    text-decoration: underline;
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+.modal ol {
+    list-style: none;
+}
+
+#modal-close-btn {
+    padding: 10px;
+    width: 60%;
 }
