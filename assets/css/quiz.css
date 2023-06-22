@@ -1,0 +1,10 @@
+.hud {
+    margin-top: 20px;
+    width: 30rem;
+    max-width: 90%;
+}
+
+.hud-item {
+    width: 14rem;
+    font-size: 15px;
+}

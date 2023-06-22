@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <!-- Title and Favicon -->
-        <title>Quiz Champion - Homepage</title>
+        <title>Quiz Champion - Quiz</title>
         <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
 
         <!-- CSS Style Sheets -->
@@ -18,41 +18,27 @@
             crossorigin="anonymous"
         />
         <link rel="stylesheet" href="assets/css/style.css" />
+        <link rel="stylesheet" href="assets/css/quiz.css" />
     </head>
     <body>
         <div class="mx-auto header-container d-flex justify-content-center">
             <h1><span>&#127942 </span> Quiz <span> &#127942</span><br />Champion</h1>
         </div>
+        <div class="hud mx-auto d-flex justify-content-between">
+            <div class="hud-item text-center">Progress <span>1/10</span></div>
+            <div class="hud-item text-center">Score <span>0</span></div>
+        </div>
         <div class="mx-auto d-flex col">
             <div
-                class="row mx-auto mt-5 game-container d-flex justify-content-center"
+                class="row mx-auto game-container d-flex justify-content-center"
             >
-                <a href="quiz.html" class="my-3 d-flex justify-content-center game-btn">Start Quiz</a>
-                <a href="#" data-bs-toggle="modal" data-bs-target="#howToModal" class="my-3 d-flex justify-content-center game-btn">How To Play</a>
-                <a href="leaderboard.html" class="my-3 d-flex justify-content-center game-btn">Leader Board</a>
+                <h2 class="fs-5">This is a test question?</h2>
+                <a href="#" class="my-3 d-flex justify-content-center game-btn">Choice 1</a>
+                <a href="#" class="my-3 d-flex justify-content-center game-btn">Choice 2</a>
+                <a href="#" class="my-3 d-flex justify-content-center game-btn">Choice 3</a>
+                <a href="#" class="my-3 d-flex justify-content-center game-btn">Choice 4</a>
             </div>
         </div>
-
-        <!-- Hot To Play Modal -->
-<div class="modal fade" id="howToModal" tabindex="-1" aria-labelledby="howToModal" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header justify-content-center">
-          <h1 class="modal-title fs-5" id="howToModalLabel">How To Play</h1>
-        </div>
-        <div class="modal-body">
-          <ol>
-            <li>Step 1</li>
-            <li>Step 2</li>
-            <li>Step 3</li>
-          </ol>
-        </div>
-        <div class="modal-footer justify-content-center">
-          <a href="#" id="modal-close-btn" class="my-3 d-flex justify-content-center game-btn" data-bs-dismiss="modal">Close</a>
-        </div>
-      </div>
-    </div>
-  </div>
 
         <!-- Scripts -->
         <script
