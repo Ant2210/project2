@@ -20,15 +20,26 @@ let questions = [
         incorrectAnswers: ["5", "3", "7"]
      }
 ];
+
 let availableQuestions = [];
 let currentQuestion = [];
+let currentAnswers = [];
 
 newQuestion = () => {
     availableQuestions = [...questions];
     let random = Math.floor(Math.random() * 3);
-// Code to move item from one array to another - https://stackoverflow.com/questions/42374593/moving-javascript-object-from-one-array-to-another
     currentQuestion = (availableQuestions.splice(random, 1));
     question.innerHTML = currentQuestion[0].question;
+
+    currentAnswers = currentQuestion[0].incorrectAnswers.concat(currentQuestion[0].correctAnswer);
+    let i = 0;
+
+while (i < choices.length) {
+  choices[i].innerHTML = currentAnswers[i];
+  i++;
+}
 }
 
 newQuestion()
+
+console.log(choices)
