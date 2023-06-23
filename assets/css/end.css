@@ -1,3 +1,7 @@
+h3 {
+    font-size: 1em;
+}
+
 #final-score {
     font-size: 30px;
 }
@@ -6,7 +10,13 @@ form input {
     text-align: center;
     width: 375px;
     height: 45px;
-    border: 2px solid #333333;
+    max-width: 95%;
+    outline: 2px solid #333333;
+    border: 2px solid rgba(0, 0, 0, 0);
+}
+
+.row > * {
+    padding: 0;
 }
 
 .form-btn {
@@ -14,6 +24,7 @@ form input {
     background-color: rgb(255, 223, 41);
     width: 375px;
     height: 45px;
+    max-width: 95%;
     text-decoration: none;
     padding: 10px;
     color: #333333;

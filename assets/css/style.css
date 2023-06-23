@@ -48,6 +48,7 @@ h1 {
     background-color: rgb(255, 223, 41);
     width: 375px;
     height: 45px;
+    max-width: 90%;
     text-decoration: none;
     padding: 10px;
     color: #333333;

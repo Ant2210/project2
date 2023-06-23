@@ -16,9 +16,7 @@ saveScore = () => {
         const userInput = document.forms["score-form"]["username"].value;
         if(userInput == null || userInput == "") {
             launchValidationModal.click();
-        } else {
-            alert('Thanks')
-        }
+        };
     });
 };
 
