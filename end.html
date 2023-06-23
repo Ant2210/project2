@@ -30,7 +30,7 @@
             >
                 <h2 class="fs-5">You Scored<br><br><span id="final-score">100!</span></h2>
                 <h3 class="fs-5 mt-1">Enter your name below to save your score to the leader board!</h3>
-                <form action="">
+                <form action="" name="score-form">
                     <input type="text" name="username" id="username" placeholder="Username">
                     <button type="submit" id="save-btn" class="mx-auto my-3 d-flex justify-content-center form-btn">Save</button>
                 </form>
@@ -38,6 +38,24 @@
                 <a href="index.html" class="my-3 d-flex justify-content-center game-btn">Skip & Go Home</a>
             </div>
         </div>
+
+        <a href="#" data-bs-toggle="modal" data-bs-target="#validationModal" id="launch-validation-modal"></a>
+
+        <div class="modal fade" id="validationModal" tabindex="-1" aria-labelledby="validationModal" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header justify-content-center">
+                  <h1 class="modal-title fs-5" id="validationModalLabel">How To Play</h1>
+                </div>
+                <div class="modal-body text-center">
+                  <p>Please enter a username before saving.</p>
+                </div>
+                <div class="modal-footer justify-content-center">
+                  <a href="#" id="modal-close-btn" class="my-3 d-flex justify-content-center game-btn" data-bs-dismiss="modal">Close</a>
+                </div>
+              </div>
+            </div>
+          </div>
 
         <!-- Scripts -->
         <script
