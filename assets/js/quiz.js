@@ -56,19 +56,19 @@ checkAnswer = () => {
         choice.addEventListener("click", (e) => {
             if(e.target.innerHTML == currentQuestion.correctAnswer) {
                 score++;
-                questionCounter++;
                 currentScore.innerHTML = score;
-                progress.innerHTML = questionCounter;
                 if (availableQuestions.length === 0) {
                     return window.location.assign("end.html"); 
                 }
+                questionCounter++;
+                progress.innerHTML = questionCounter;
                 newQuestion();
             } else {
-                questionCounter++;
-                progress.innerHTML = questionCounter;
                 if (availableQuestions.length === 0) {
                     return window.location.assign("end.html"); 
                 }
+                questionCounter++;
+                progress.innerHTML = questionCounter;
                 newQuestion();
             }
         })
