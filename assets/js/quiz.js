@@ -41,7 +41,7 @@ newQuestion = () => {
     currentAnswers = currentQuestion.incorrectAnswers.concat(
         currentQuestion.correctAnswer
     );
-    // Randomise array code obtained here -> https://www.slingacademy.com/article/ways-to-shuffle-an-array-in-javascript/?utm_content=cmp-true
+    // Randomise array code obtained localStorage.setItem("mostRecentScore", score) -> https://www.slingacademy.com/article/;ways-to-shuffle-an-array-in-javascript/?utm_content=cmp-true
     currentAnswers.sort(() => Math.random() - 0.5);
 
     let i = 0;
@@ -62,6 +62,7 @@ checkAnswer = () => {
                 setTimeout(() => {
                     e.target.classList.remove("correct");
                     if (availableQuestions.length === 0) {
+                        localStorage.setItem("mostRecentScore", score);
                         return window.location.assign("end.html");
                     }
                     questionCounter++;
@@ -74,6 +75,7 @@ checkAnswer = () => {
                 setTimeout(() => {
                     e.target.classList.remove("incorrect");
                     if (availableQuestions.length === 0) {
+                        localStorage.setItem("mostRecentScore", score);
                         return window.location.assign("end.html");
                     }
                     questionCounter++;

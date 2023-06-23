@@ -1,5 +1,13 @@
 const saveButton = document.getElementById("save-btn");
 const launchValidationModal = document.getElementById("launch-validation-modal");
+const mostRecentScore = localStorage.getItem("mostRecentScore");
+const finalScore = document.getElementById("final-score");
+finalScore.innerHTML = mostRecentScore;
+
+const finalScoreEmoji = document.getElementsByClassName("final-score-emoji");
+Array.from(finalScoreEmoji).forEach((emoji) => {
+    (parseInt(mostRecentScore) === 0) ? emoji.innerHTML = "&#128557" : emoji.innerHTML = "&#127941";
+});
 
 saveScore = () => {
     saveButton.addEventListener("click", (e) => {
