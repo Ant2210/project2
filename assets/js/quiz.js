@@ -24,6 +24,7 @@ let questions = [
 let availableQuestions = [];
 let currentQuestion = [];
 let currentAnswers = [];
+let score = 0;
 
 startGame = () => {
     newQuestion();
@@ -52,7 +53,11 @@ newQuestion = () => {
 checkAnswer = () => {
     choices.forEach((choice) => {
         choice.addEventListener("click", (e) => {
-            e.target.innerHTML == currentQuestion[0].correctAnswer ? console.log("well done") : console.log("whoops");
+            if(e.target.innerHTML == currentQuestion[0].correctAnswer) {
+                score++;
+                currentScore.innerHTML = score;
+                newQuestion();
+            }
         })
     })
 }
