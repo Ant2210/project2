@@ -27,12 +27,12 @@ let currentAnswers = [];
 let score = 0;
 
 startGame = () => {
+    availableQuestions = [...questions];
     newQuestion();
     checkAnswer();
 }
 
 newQuestion = () => {
-    availableQuestions = [...questions];
     let random = Math.floor(Math.random() * 3);
     currentQuestion = availableQuestions.splice(random, 1);
     question.innerHTML = currentQuestion[0].question;
@@ -57,9 +57,11 @@ checkAnswer = () => {
                 score++;
                 currentScore.innerHTML = score;
                 newQuestion();
+            } else {
+                newQuestion();
             }
         })
     })
-}
+};
 
 startGame();
