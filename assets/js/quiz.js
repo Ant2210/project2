@@ -25,6 +25,7 @@ let availableQuestions = [];
 let currentQuestion = [];
 let currentAnswers = [];
 let score = 0;
+let questionCounter = 1;
 
 startGame = () => {
     availableQuestions = [...questions];
@@ -33,12 +34,12 @@ startGame = () => {
 }
 
 newQuestion = () => {
-    let random = Math.floor(Math.random() * 3);
-    currentQuestion = availableQuestions.splice(random, 1);
-    question.innerHTML = currentQuestion[0].question;
+    let random = Math.floor(Math.random() * availableQuestions.length);
+    currentQuestion = availableQuestions.splice(random, 1)[0];
+    question.innerHTML = currentQuestion.question;
 
-    currentAnswers = currentQuestion[0].incorrectAnswers.concat(
-        currentQuestion[0].correctAnswer
+    currentAnswers = currentQuestion.incorrectAnswers.concat(
+        currentQuestion.correctAnswer
     );
     // Randomise array code obtained here -> https://www.slingacademy.com/article/ways-to-shuffle-an-array-in-javascript/?utm_content=cmp-true
     currentAnswers.sort(() => Math.random() - 0.5);
@@ -53,11 +54,21 @@ newQuestion = () => {
 checkAnswer = () => {
     choices.forEach((choice) => {
         choice.addEventListener("click", (e) => {
-            if(e.target.innerHTML == currentQuestion[0].correctAnswer) {
+            if(e.target.innerHTML == currentQuestion.correctAnswer) {
                 score++;
+                questionCounter++;
                 currentScore.innerHTML = score;
+                progress.innerHTML = questionCounter;
+                if (availableQuestions.length === 0) {
+                    return window.location.assign("end.html"); 
+                }
                 newQuestion();
             } else {
+                questionCounter++;
+                progress.innerHTML = questionCounter;
+                if (availableQuestions.length === 0) {
+                    return window.location.assign("end.html"); 
+                }
                 newQuestion();
             }
         })
