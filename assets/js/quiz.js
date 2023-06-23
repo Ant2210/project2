@@ -57,19 +57,29 @@ checkAnswer = () => {
             if (e.target.innerHTML == currentQuestion.correctAnswer) {
                 score++;
                 currentScore.innerHTML = score;
-                if (availableQuestions.length === 0) {
-                    return window.location.assign("end.html");
-                }
-                questionCounter++;
-                progress.innerHTML = questionCounter;
-                newQuestion();
+                e.target.classList.add("correct");
+
+                setTimeout(() => {
+                    e.target.classList.remove("correct");
+                    if (availableQuestions.length === 0) {
+                        return window.location.assign("end.html");
+                    }
+                    questionCounter++;
+                    progress.innerHTML = questionCounter;
+                    newQuestion();
+                }, 1000);
             } else {
-                if (availableQuestions.length === 0) {
-                    return window.location.assign("end.html");
-                }
-                questionCounter++;
-                progress.innerHTML = questionCounter;
-                newQuestion();
+                e.target.classList.add("incorrect");
+
+                setTimeout(() => {
+                    e.target.classList.remove("incorrect");
+                    if (availableQuestions.length === 0) {
+                        return window.location.assign("end.html");
+                    }
+                    questionCounter++;
+                    progress.innerHTML = questionCounter;
+                    newQuestion();
+                }, 1000);
             }
         });
     });

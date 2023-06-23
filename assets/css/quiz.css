@@ -8,3 +8,11 @@
     width: 14rem;
     font-size: 15px;
 }
+
+.correct {
+    background-color: green;
+}
+
+.incorrect {
+    background-color: red;
+}
