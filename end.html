@@ -8,7 +8,7 @@
 
         <!-- Title and Favicon -->
         <title>Quiz Champion - Quiz</title>
-        <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
 
         <!-- CSS Style Sheets -->
         <link
@@ -22,41 +22,127 @@
     </head>
     <body>
         <div class="mx-auto header-container d-flex justify-content-center">
-            <h1><span>&#127942 </span> Quiz <span> &#127942</span><br />Champion</h1>
+            <h1>
+                <span>&#127942; </span> Quiz <span> &#127942;</span
+                ><br />Champion
+            </h1>
         </div>
         <div class="mx-auto d-flex col">
             <div
                 class="row mx-auto mt-5 game-container d-flex justify-content-center text-center"
             >
-                <h2 class="fs-5">You Scored<br><br><span class="final-score-emoji"></span><span id="final-score">0</span><span class="final-score-emoji"></span></h2>
-                <h3 class="mt-1">Enter your name below to save your score to the leader board!</h3>
-                <form action="" name="score-form">
-                    <input type="text" name="username" id="username" placeholder="Username">
-                    <button type="submit" id="save-btn" class="mx-auto my-3 d-flex justify-content-center form-btn">Save</button>
+                <h2 class="fs-5">
+                    You Scored<br /><br /><span class="final-score-emoji emoji"></span
+                    ><span id="final-score">0</span
+                    ><span class="final-score-emoji emoji"></span>
+                </h2>
+                <h3 class="mt-1">
+                    Enter your name below to save your score to the leader
+                    board!
+                </h3>
+                <form name="score-form">
+                    <input
+                        type="text"
+                        name="username"
+                        id="username"
+                        placeholder="Username"
+                    />
+                    <button
+                        type="submit"
+                        id="save-btn"
+                        class="mx-auto my-3 d-flex justify-content-center form-btn"
+                    >
+                        Save
+                    </button>
                 </form>
                 <div class="divider"></div>
-                <a href="index.html" class="my-3 d-flex justify-content-center form-btn">Skip & Go Home</a>
+                <a
+                    href="index.html"
+                    class="my-3 d-flex justify-content-center form-btn"
+                    >Skip & Go Home</a
+                >
             </div>
         </div>
 
         <!-- VALIDATION MODAL -->
-        <a href="#" data-bs-toggle="modal" data-bs-target="#validationModal" id="launch-validation-modal"></a>
+        <a
+            href="#"
+            data-bs-toggle="modal"
+            data-bs-target="#validationModal"
+            id="launch-validation-modal"
+        ></a>
 
-        <div class="modal fade" id="validationModal" tabindex="-1" aria-labelledby="validationModal" aria-hidden="true">
+        <div
+            class="modal fade"
+            id="validationModal"
+            tabindex="-1"
+            aria-labelledby="validationModal"
+            aria-hidden="true"
+        >
             <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header justify-content-center">
-                  <h1 class="modal-title fs-5" id="validationModalLabel">Whoops!</h1>
+                <div class="modal-content">
+                    <div class="modal-header justify-content-center">
+                        <span class="emoji">&#129318;</span>
+                        <h1 class="modal-title fs-5" id="validationModalLabel">
+                            Whoops!
+                        </h1>
+                        <span class="emoji">&#129318;</span>
+                    </div>
+                    <div class="modal-body text-center">
+                        <p>Please enter a username before saving.</p>
+                    </div>
+                    <div class="modal-footer justify-content-center">
+                        <a
+                            href="#"
+                            id="modal-close-btn"
+                            class="my-3 d-flex justify-content-center game-btn"
+                            data-bs-dismiss="modal"
+                            >OK</a
+                        >
+                    </div>
                 </div>
-                <div class="modal-body text-center">
-                  <p>Please enter a username before saving.</p>
-                </div>
-                <div class="modal-footer justify-content-center">
-                  <a href="#" id="modal-close-btn" class="my-3 d-flex justify-content-center game-btn" data-bs-dismiss="modal">OK</a>
-                </div>
-              </div>
             </div>
-          </div>
+        </div>
+
+        <!-- COUNTDOWN MODAL -->
+        <a
+            href="#"
+            data-bs-toggle="modal"
+            data-bs-target="#countdownModal"
+            id="launch-countdown-modal"
+            ></a
+        >
+
+        <div
+            class="modal fade"
+            id="countdownModal"
+            tabindex="-1"
+            aria-labelledby="countdownModal"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header justify-content-center">
+                        <span class="emoji">&#128077;</span>
+                        <h1 class="modal-title fs-5" id="countdownModalLabel">
+                            Thank You
+                        </h1>
+                        <span class="emoji">&#128077;</span>
+                    </div>
+                    <div class="modal-body text-center">
+                        <p>
+                            Thank you for submitting your score, you will be
+                            redirected to the homepage where you can view the
+                            leader board in...<br /><span
+                                id="countdown-timer"
+                                class="fs-5"
+                                >10</span
+                            >
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- Scripts -->
         <script
