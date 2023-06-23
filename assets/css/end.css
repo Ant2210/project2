@@ -1,0 +1,26 @@
+#final-score {
+    font-size: 30px;
+}
+
+form input {
+    text-align: center;
+    width: 375px;
+    height: 45px;
+    border: 2px solid #333333;
+}
+
+.form-btn {
+    outline: 2px outset #333333;
+    background-color: rgb(255, 223, 41);
+    width: 375px;
+    height: 45px;
+    text-decoration: none;
+    padding: 10px;
+    color: #333333;
+    transition: outline 150ms ease-in-out, transform 150ms ease-in-out;
+}
+
+.form-btn:hover {
+    outline: 1px outset #333333;
+    transform: translateY(1px);
+}

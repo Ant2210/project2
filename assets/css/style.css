@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
 
 
-/* GLOBAL STYLES */
+/* GLOBAL STYLES & UTILITIES */
 
 body {
     background-color: #ECECEC;
@@ -34,12 +34,19 @@ h1 {
     padding: 15px;
 }
 
+.divider {
+    width: 60%;
+    margin: 20px 0 18px 0;
+    border-bottom: 2px solid #333333;
+}
+
 /* BUTTONS */
 
 .game-btn {
     outline: 4px outset #333333;
     background-color: rgb(255, 223, 41);
-    width: 85%;
+    width: 375px;
+    height: 45px;
     text-decoration: none;
     padding: 10px;
     color: #333333;
