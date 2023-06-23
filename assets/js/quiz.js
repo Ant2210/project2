@@ -31,7 +31,7 @@ startGame = () => {
     availableQuestions = [...questions];
     newQuestion();
     checkAnswer();
-}
+};
 
 newQuestion = () => {
     let random = Math.floor(Math.random() * availableQuestions.length);
@@ -54,25 +54,25 @@ newQuestion = () => {
 checkAnswer = () => {
     choices.forEach((choice) => {
         choice.addEventListener("click", (e) => {
-            if(e.target.innerHTML == currentQuestion.correctAnswer) {
+            if (e.target.innerHTML == currentQuestion.correctAnswer) {
                 score++;
                 currentScore.innerHTML = score;
                 if (availableQuestions.length === 0) {
-                    return window.location.assign("end.html"); 
+                    return window.location.assign("end.html");
                 }
                 questionCounter++;
                 progress.innerHTML = questionCounter;
                 newQuestion();
             } else {
                 if (availableQuestions.length === 0) {
-                    return window.location.assign("end.html"); 
+                    return window.location.assign("end.html");
                 }
                 questionCounter++;
                 progress.innerHTML = questionCounter;
                 newQuestion();
             }
-        })
-    })
+        });
+    });
 };
 
 startGame();
