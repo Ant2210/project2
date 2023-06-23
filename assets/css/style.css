@@ -44,6 +44,7 @@ h1 {
 
 .game-btn {
     outline: 4px outset #333333;
+    border: none;
     background-color: rgb(255, 223, 41);
     width: 375px;
     height: 45px;

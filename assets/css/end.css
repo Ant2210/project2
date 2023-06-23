@@ -10,7 +10,7 @@ form input {
 }
 
 .form-btn {
-    outline: 2px outset #333333;
+    outline: 4px outset #333333;
     background-color: rgb(255, 223, 41);
     width: 375px;
     height: 45px;
@@ -18,9 +18,10 @@ form input {
     padding: 10px;
     color: #333333;
     transition: outline 150ms ease-in-out, transform 150ms ease-in-out;
+    border: none;
 }
 
 .form-btn:hover {
-    outline: 1px outset #333333;
+    outline: 2px outset #333333;
     transform: translateY(1px);
 }
