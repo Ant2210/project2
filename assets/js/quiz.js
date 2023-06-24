@@ -3,29 +3,24 @@ const choices = Array.from(document.getElementsByClassName("choices"));
 const progress = document.getElementById("progress");
 const currentScore = document.getElementById("current-score");
 
-let questions = [
-    {
-        question: "What comes first alphabetically?",
-        correctAnswer: "A",
-        incorrectAnswers: ["B", "C", "D"],
-    },
-    {
-        question: "What comes first numerically?",
-        correctAnswer: "1",
-        incorrectAnswers: ["2", "3", "4"],
-    },
-    {
-        question: "What is 2 + 2?",
-        correctAnswer: "4",
-        incorrectAnswers: ["5", "3", "7"],
-    },
-];
+let questions = [];
 
 let availableQuestions = [];
 let currentQuestion = [];
 let currentAnswers = [];
 let score = 0;
 let questionCounter = 1;
+
+async function callApi() {
+    const response = await fetch(
+        "https://opentdb.com/api.php?amount=10&type=multiple"
+    );
+    if (response.status >= 200) {
+        data = await response.json();
+        questions = data.results;
+        startGame();
+    } else alert("Error loading questions");
+}
 
 startGame = () => {
     availableQuestions = [...questions];
@@ -38,8 +33,8 @@ newQuestion = () => {
     currentQuestion = availableQuestions.splice(random, 1)[0];
     question.innerHTML = currentQuestion.question;
 
-    currentAnswers = currentQuestion.incorrectAnswers.concat(
-        currentQuestion.correctAnswer
+    currentAnswers = currentQuestion.incorrect_answers.concat(
+        currentQuestion.correct_answer
     );
     // Randomise array code obtained localStorage.setItem("mostRecentScore", score) -> https://www.slingacademy.com/article/;ways-to-shuffle-an-array-in-javascript/?utm_content=cmp-true
     currentAnswers.sort(() => Math.random() - 0.5);
@@ -54,7 +49,7 @@ newQuestion = () => {
 checkAnswer = () => {
     choices.forEach((choice) => {
         choice.addEventListener("click", (e) => {
-            if (e.target.innerHTML == currentQuestion.correctAnswer) {
+            if (e.target.innerHTML == currentQuestion.correct_answer) {
                 score++;
                 currentScore.innerHTML = score;
                 e.target.classList.add("correct");
@@ -87,4 +82,4 @@ checkAnswer = () => {
     });
 };
 
-startGame();
+callApi();
