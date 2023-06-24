@@ -15,11 +15,11 @@ async function callApi() {
     const response = await fetch(
         "https://opentdb.com/api.php?amount=10&type=multiple"
     );
-    if (response.status >= 200) {
+    if (response.status >= 200 && response.status < 299) {
         data = await response.json();
         questions = data.results;
         startGame();
-    } else alert("Error loading questions");
+    } else document.getElementById("launch-error-modal").click();;
 }
 
 startGame = () => {
