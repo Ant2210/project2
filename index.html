@@ -29,11 +29,11 @@
             >
                 <a href="quiz.html" class="my-3 d-flex justify-content-center game-btn">Start Quiz</a>
                 <a href="#" data-bs-toggle="modal" data-bs-target="#howToModal" class="my-3 d-flex justify-content-center game-btn">How To Play</a>
-                <a href="leaderboard.html" class="my-3 d-flex justify-content-center game-btn">Leader Board</a>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#LeaderBoardModal" class="my-3 d-flex justify-content-center game-btn">Leader Board</a>
             </div>
         </div>
 
-        <!-- Hot To Play Modal -->
+        <!-- How To Play Modal -->
 <div class="modal fade" id="howToModal" tabindex="-1" aria-labelledby="howToModal" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -43,7 +43,7 @@
           <span class="emoji">&#129335;</span>
         </div>
         <div class="modal-body">
-          <ol>
+          <ol class="how-to-steps">
             <li>Step 1</li>
             <li>Step 2</li>
             <li>Step 3</li>
@@ -56,11 +56,36 @@
     </div>
   </div>
 
+          <!-- Leader Board Modal -->
+<div class="modal fade" id="LeaderBoardModal" tabindex="-1" aria-labelledby="LeaderBoardModal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header justify-content-center">
+        <span class="emoji">&#127941;</span>
+        <h1 class="modal-title fs-5" id="LeaderBoardModalLabel">Leader Board</h1>
+        <span class="emoji">&#127941;</span>
+      </div>
+      <div class="modal-body">
+        <div class="list-container mx-5">
+          <ol id="high-scores-list">
+            <p>No Scores Yet</p>
+            <span class="emoji">&#128542;</span>
+          </ol>
+        </div>
+      </div>
+      <div class="modal-footer justify-content-center">
+        <a href="#" id="modal-close-btn" class="my-3 d-flex justify-content-center game-btn" data-bs-dismiss="modal">Close</a>
+      </div>
+    </div>
+  </div>
+</div>
+
         <!-- Scripts -->
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
             crossorigin="anonymous"
         ></script>
+        <script src="assets/js/highscores.js"></script>
     </body>
 </html>

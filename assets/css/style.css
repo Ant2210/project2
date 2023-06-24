@@ -1,13 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap");
 
 /* GLOBAL STYLES & UTILITIES */
 
 body {
-    background-color: #ECECEC;
+    background-color: #ececec;
     color: #333333;
-    font-family: 'Press Start 2P', Arial, sans-serif;
+    font-family: "Press Start 2P", Arial, sans-serif;
 }
 
 h1 {
@@ -26,7 +25,7 @@ h1 {
     width: 30rem;
     max-width: 90%;
     padding: 15px;
-    font-family: 'Bungee Spice', Arial, sans-serif;
+    font-family: "Bungee Spice", Arial, sans-serif;
 }
 
 .game-container {
@@ -88,11 +87,61 @@ h1 {
     border-top: none;
 }
 
-.modal ol {
-    list-style: none;
-}
-
 #modal-close-btn {
     padding: 10px;
     width: 60%;
+}
+
+.how-to-steps {
+    list-style: none;
+}
+
+.modal li {
+    text-align: center;
+}
+
+#LeaderBoardModal .modal-body {
+    max-height: 20vh;
+    overflow: auto;
+}
+
+/* SCROLL BAR */
+::-webkit-scrollbar {
+    width: 25px;
+    height: 25px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #2290fd;
+    border: 4px inset #333333;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-button:single-button {
+    background-color: #2290fd;
+    display: block;
+    border-style: solid;
+    height: 20px;
+}
+
+/* Up */
+::-webkit-scrollbar-button:single-button:vertical:decrement {
+    border-width: 0px 12px 12px 12px;
+    border-color: transparent transparent #333333 transparent;
+}
+
+::-webkit-scrollbar-button:single-button:vertical:decrement:hover {
+    border-color: transparent transparent #777777 transparent;
+}
+/* Down */
+::-webkit-scrollbar-button:single-button:vertical:increment {
+    border-width: 12px 12px 0 12px;
+    border-color: #333333 transparent transparent transparent;
+}
+
+::-webkit-scrollbar-button:vertical:single-button:increment:hover {
+    border-color: #777777 transparent transparent transparent;
 }
