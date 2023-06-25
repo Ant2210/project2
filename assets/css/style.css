@@ -137,6 +137,7 @@ h1 {
 ::-webkit-scrollbar-button:single-button:vertical:decrement:hover {
     border-color: transparent transparent #777777 transparent;
 }
+
 /* Down */
 ::-webkit-scrollbar-button:single-button:vertical:increment {
     border-width: 12px 12px 0 12px;

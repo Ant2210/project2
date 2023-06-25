@@ -1,91 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- Standard Meta Tags -->
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!-- Title and Favicon -->
-        <title>Quiz Champion - Homepage</title>
-        <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+<head>
+    <!-- Standard Meta Tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- CSS Style Sheets -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
-            crossorigin="anonymous"
-        />
-        <link rel="stylesheet" href="assets/css/style.css" />
-    </head>
-    <body>
-        <div class="mx-auto header-container d-flex justify-content-center text-center">
-            <h1>Gamer<br><span>&#127942 </span> Quiz <span> &#127942</span><br />Champion</h1>
+    <!-- Title and Favicon -->
+    <title>Quiz Champion - Homepage</title>
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+
+    <!-- CSS Style Sheets -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="mx-auto header-container d-flex justify-content-center text-center">
+        <h1>
+            Gamer
+            <br>
+            <span>&#127942;</span>
+            Quiz
+            <span>&#127942;</span>
+            <br>
+            Champion
+        </h1>
+    </div>
+    <div class="mx-auto d-flex col">
+        <div class="row mx-auto mt-5 game-container d-flex justify-content-center">
+            <a href="quiz.html" class="my-3 d-flex justify-content-center game-btn">
+                Start Quiz
+            </a>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#howToModal"
+                class="my-3 d-flex justify-content-center game-btn">
+                How To Play
+            </a>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#LeaderBoardModal"
+                class="my-3 d-flex justify-content-center game-btn">
+                Leader Board
+            </a>
         </div>
-        <div class="mx-auto d-flex col">
-            <div
-                class="row mx-auto mt-5 game-container d-flex justify-content-center"
-            >
-                <a href="quiz.html" class="my-3 d-flex justify-content-center game-btn">Start Quiz</a>
-                <a href="#" data-bs-toggle="modal" data-bs-target="#howToModal" class="my-3 d-flex justify-content-center game-btn">How To Play</a>
-                <a href="#" data-bs-toggle="modal" data-bs-target="#LeaderBoardModal" class="my-3 d-flex justify-content-center game-btn">Leader Board</a>
+    </div>
+
+    <!-- How To Play Modal -->
+    <div class="modal fade" id="howToModal" tabindex="-1" aria-labelledby="howToModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header justify-content-center">
+                    <span class="emoji">&#129335;</span>
+                    <h1 class="modal-title fs-5" id="howToModalLabel">
+                        How To Play
+                    </h1>
+                    <span class="emoji">&#129335;</span>
+                </div>
+                <div class="modal-body">
+                    <ol class="how-to-steps">
+                        <li>Step 1</li>
+                        <li>Step 2</li>
+                        <li>Step 3</li>
+                    </ol>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <a href="#" class="my-3 d-flex justify-content-center game-btn modal-close-btn"
+                        data-bs-dismiss="modal">
+                        Close
+                    </a>
+                </div>
             </div>
         </div>
-
-        <!-- How To Play Modal -->
-<div class="modal fade" id="howToModal" tabindex="-1" aria-labelledby="howToModal" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header justify-content-center">
-          <span class="emoji">&#129335;</span>
-          <h1 class="modal-title fs-5" id="howToModalLabel">How To Play</h1>
-          <span class="emoji">&#129335;</span>
-        </div>
-        <div class="modal-body">
-          <ol class="how-to-steps">
-            <li>Step 1</li>
-            <li>Step 2</li>
-            <li>Step 3</li>
-          </ol>
-        </div>
-        <div class="modal-footer justify-content-center">
-          <a href="#" class="my-3 d-flex justify-content-center game-btn modal-close-btn" data-bs-dismiss="modal">Close</a>
-        </div>
-      </div>
     </div>
-  </div>
 
-          <!-- Leader Board Modal -->
-<div class="modal fade" id="LeaderBoardModal" tabindex="-1" aria-labelledby="LeaderBoardModal" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header justify-content-center">
-        <span class="emoji">&#127941;</span>
-        <h1 class="modal-title fs-5" id="LeaderBoardModalLabel">Leader Board</h1>
-        <span class="emoji">&#127941;</span>
-      </div>
-      <div class="modal-body">
-        <div class="list-container mx-5 text-center">
-          <ol id="high-scores-list">
-            <p>No Scores Yet</p>
-            <span class="emoji">&#128542;</span>
-          </ol>
+    <!-- Leader Board Modal -->
+    <div class="modal fade" id="LeaderBoardModal" tabindex="-1" aria-labelledby="LeaderBoardModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header justify-content-center">
+                    <span class="emoji">&#127941;</span>
+                    <h1 class="modal-title fs-5" id="LeaderBoardModalLabel">
+                        Leader Board
+                    </h1>
+                    <span class="emoji">&#127941;</span>
+                </div>
+                <div class="modal-body">
+                    <div class="list-container mx-5 text-center">
+                        <ol id="high-scores-list">
+                            <p>No Scores Yet</p>
+                            <span class="emoji">&#128542;</span>
+                        </ol>
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <a href="#" class="my-3 d-flex justify-content-center game-btn modal-close-btn"
+                        data-bs-dismiss="modal">
+                        Close
+                    </a>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="modal-footer justify-content-center">
-        <a href="#" class="my-3 d-flex justify-content-center game-btn modal-close-btn" data-bs-dismiss="modal">Close</a>
-      </div>
     </div>
-  </div>
-</div>
 
-        <!-- Scripts -->
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-            crossorigin="anonymous"
-        ></script>
-        <script src="assets/js/highscores.js"></script>
-    </body>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/highscores.js"></script>
+</body>
+
 </html>
