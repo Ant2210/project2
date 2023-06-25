@@ -19,13 +19,12 @@ async function callApi() {
         data = await response.json();
         questions = data.results;
         startGame();
-    } else document.getElementById("launch-error-modal").click();;
+    } else document.getElementById("launch-error-modal").click();
 }
 
 startGame = () => {
     availableQuestions = [...questions];
     newQuestion();
-    checkAnswer();
 };
 
 newQuestion = () => {
@@ -44,42 +43,50 @@ newQuestion = () => {
         choices[i].innerHTML = currentAnswers[i];
         i++;
     }
+
+    awaitAnswer();
 };
 
-checkAnswer = () => {
+awaitAnswer = () => {
     choices.forEach((choice) => {
-        choice.addEventListener("click", (e) => {
-            if (e.target.innerHTML == currentQuestion.correct_answer) {
-                score++;
-                currentScore.innerHTML = score;
-                e.target.classList.add("correct");
-
-                setTimeout(() => {
-                    e.target.classList.remove("correct");
-                    if (availableQuestions.length === 0) {
-                        localStorage.setItem("mostRecentScore", score);
-                        return window.location.assign("end.html");
-                    }
-                    questionCounter++;
-                    progress.innerHTML = questionCounter;
-                    newQuestion();
-                }, 1000);
-            } else {
-                e.target.classList.add("incorrect");
-
-                setTimeout(() => {
-                    e.target.classList.remove("incorrect");
-                    if (availableQuestions.length === 0) {
-                        localStorage.setItem("mostRecentScore", score);
-                        return window.location.assign("end.html");
-                    }
-                    questionCounter++;
-                    progress.innerHTML = questionCounter;
-                    newQuestion();
-                }, 1000);
-            }
-        });
+        choice.addEventListener("click", checkAnswer);
     });
+};
+
+checkAnswer = (e) => {
+    choices.forEach((choice) => {
+        choice.removeEventListener("click", checkAnswer);
+    });
+
+    if (e.target.innerHTML == currentQuestion.correct_answer) {
+        score++;
+        currentScore.innerHTML = score;
+        e.target.classList.add("correct");
+
+        setTimeout(() => {
+            e.target.classList.remove("correct");
+            if (availableQuestions.length === 0) {
+                localStorage.setItem("mostRecentScore", score);
+                return window.location.assign("end.html");
+            }
+            questionCounter++;
+            progress.innerHTML = questionCounter;
+            newQuestion();
+        }, 1000);
+    } else {
+        e.target.classList.add("incorrect");
+
+        setTimeout(() => {
+            e.target.classList.remove("incorrect");
+            if (availableQuestions.length === 0) {
+                localStorage.setItem("mostRecentScore", score);
+                return window.location.assign("end.html");
+            }
+            questionCounter++;
+            progress.innerHTML = questionCounter;
+            newQuestion();
+        }, 1000);
+    }
 };
 
 callApi();
