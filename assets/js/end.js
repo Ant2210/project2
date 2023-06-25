@@ -21,7 +21,7 @@ saveScore = () => {
             launchValidationModal.click();
         } else {
             const score = {
-                score: Math.floor(Math.random() * 100),
+                score: mostRecentScore,
                 name: userInput,
             };
 

@@ -118,7 +118,7 @@ h1 {
 }
 
 ::-webkit-scrollbar-track {
-    background: transparent;
+    background: #2290fd;
 }
 
 ::-webkit-scrollbar-button:single-button {

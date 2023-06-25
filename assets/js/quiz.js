@@ -13,7 +13,7 @@ let questionCounter = 1;
 
 async function callApi() {
     const response = await fetch(
-        "https://opentdb.com/api.php?amount=10&type=multiple"
+        "https://opentdb.com/api.php?amount=10&category=15&difficulty=easy&type=multiple"
     );
     if (response.status >= 200 && response.status < 299) {
         data = await response.json();
@@ -59,7 +59,7 @@ checkAnswer = (e) => {
     });
 
     if (e.target.innerHTML == currentQuestion.correct_answer) {
-        score++;
+        score+=10;
         currentScore.innerHTML = score;
         e.target.classList.add("correct");
 
