@@ -2,8 +2,8 @@ const question = document.getElementById("question");
 const choices = Array.from(document.getElementsByClassName("choices"));
 const progress = document.getElementById("progress");
 const currentScore = document.getElementById("current-score");
-const loading = document.getElementById('loading');
-const gameContainer = document.getElementById('game-container');
+const loading = document.getElementById("loading");
+const gameContainer = document.getElementById("game-container");
 
 let questions = [];
 
@@ -20,19 +20,15 @@ async function callApi() {
     if (response.status >= 200 && response.status < 299) {
         data = await response.json();
         questions = data.results;
-        startGame();
+        availableQuestions = [...questions];
+
+        loadQuestion();
         loading.classList.add("d-none");
-        document.getElementById("game-container").classList.remove("d-none");
-        
+        gameContainer.classList.remove("d-none");
     } else document.getElementById("launch-error-modal").click();
 }
 
-startGame = () => {
-    availableQuestions = [...questions];
-    newQuestion();
-};
-
-newQuestion = () => {
+const loadQuestion = () => {
     let random = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions.splice(random, 1)[0];
     question.innerHTML = currentQuestion.question;
@@ -52,19 +48,19 @@ newQuestion = () => {
     awaitAnswer();
 };
 
-awaitAnswer = () => {
+const awaitAnswer = () => {
     choices.forEach((choice) => {
         choice.addEventListener("click", checkAnswer);
     });
 };
 
-checkAnswer = (e) => {
+const checkAnswer = (e) => {
     choices.forEach((choice) => {
         choice.removeEventListener("click", checkAnswer);
     });
 
     if (e.target.innerHTML == currentQuestion.correct_answer) {
-        score+=10;
+        score += 10;
         currentScore.innerHTML = score;
         e.target.classList.add("correct");
 
@@ -76,7 +72,7 @@ checkAnswer = (e) => {
             }
             questionCounter++;
             progress.innerHTML = questionCounter;
-            newQuestion();
+            loadQuestion();
         }, 1000);
     } else {
         e.target.classList.add("incorrect");
@@ -89,7 +85,7 @@ checkAnswer = (e) => {
             }
             questionCounter++;
             progress.innerHTML = questionCounter;
-            newQuestion();
+            loadQuestion();
         }, 1000);
     }
 };

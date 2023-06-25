@@ -12,7 +12,7 @@ Array.from(finalScoreEmoji).forEach((emoji) => {
     parseInt(mostRecentScore) === 0 ? (emoji.innerHTML = "&#128557;") : (emoji.innerHTML = "&#127941;");
 });
 
-saveScore = () => {
+const saveScore = () => {
     saveButton.addEventListener("click", (e) => {
         e.preventDefault();
         // Check the value of an input field found here -> https://stackoverflow.com/questions/3937513/javascript-validation-for-empty-input-field
@@ -34,7 +34,7 @@ saveScore = () => {
     });
 };
 
-redirectToGame = () => {
+const redirectToGame = () => {
     let timeLeft = 10;
     launchCountdown.click();
     let downloadTimer = setInterval(() => {
