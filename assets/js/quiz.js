@@ -2,6 +2,8 @@ const question = document.getElementById("question");
 const choices = Array.from(document.getElementsByClassName("choices"));
 const progress = document.getElementById("progress");
 const currentScore = document.getElementById("current-score");
+const loading = document.getElementById('loading');
+const gameContainer = document.getElementById('game-container');
 
 let questions = [];
 
@@ -19,6 +21,9 @@ async function callApi() {
         data = await response.json();
         questions = data.results;
         startGame();
+        loading.classList.add("d-none");
+        document.getElementById("game-container").classList.remove("d-none");
+        
     } else document.getElementById("launch-error-modal").click();
 }
 

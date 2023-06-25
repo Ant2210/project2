@@ -37,37 +37,43 @@
                 Score <span id="current-score">0</span>
             </div>
         </div>
+
+        <div id="loading" class="my-5">
+            <h2 class="text-center">Loading...</h2>
+        </div>
         <div class="mx-auto d-flex col">
             <div
-                class="row mx-auto game-container d-flex justify-content-center mb-5"
+                id="game-container"
+                class="row mx-auto game-container d-flex justify-content-center mb-5 d-none"
             >
-                <h2 id="question" class="fs-5">This is a test question?</h2>
+                <h2 id="question" class="fs-5"></h2>
                 <a
                     href="#"
                     class="my-3 d-flex justify-content-center game-btn choices"
-                    >Choice 1</a
-                >
+                ></a>
                 <a
                     href="#"
                     class="my-3 d-flex justify-content-center game-btn choices"
-                    >Choice 2</a
-                >
+                ></a>
                 <a
                     href="#"
                     class="my-3 d-flex justify-content-center game-btn choices"
-                    >Choice 3</a
-                >
+                ></a>
                 <a
                     href="#"
                     class="my-3 d-flex justify-content-center game-btn choices"
-                    >Choice 4</a
-                >
+                ></a>
             </div>
         </div>
 
         <!-- Error Response Modal -->
 
-        <a href="#" data-bs-toggle="modal" data-bs-target="#errorModal" id="launch-error-modal"></a>
+        <a
+            href="#"
+            data-bs-toggle="modal"
+            data-bs-target="#errorModal"
+            id="launch-error-modal"
+        ></a>
 
         <div
             class="modal fade"
@@ -86,7 +92,10 @@
                         <span class="emoji">&#128557;</span>
                     </div>
                     <div class="modal-body">
-                        <p>Sorry, there has been a problem loading the quiz. Hit the button below to return home and try again.</p>
+                        <p>
+                            Sorry, there has been a problem loading the quiz.
+                            Hit the button below to return home and try again.
+                        </p>
                     </div>
                     <div class="modal-footer justify-content-center">
                         <a
