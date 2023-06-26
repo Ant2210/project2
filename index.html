@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
     <div class="mx-auto header-container d-flex justify-content-center text-center">
         <h1>
             Gamer
@@ -29,20 +29,19 @@
             Champion
         </h1>
     </div>
-    <div class="mx-auto d-flex col">
-        <div class="row mx-auto mt-5 game-container d-flex justify-content-center">
-            <a href="quiz.html" class="my-3 d-flex justify-content-center game-btn">
-                Start Quiz
-            </a>
-            <a href="#" data-bs-toggle="modal" data-bs-target="#howToModal"
-                class="my-3 d-flex justify-content-center game-btn">
-                How To Play
-            </a>
-            <a href="#" data-bs-toggle="modal" data-bs-target="#LeaderBoardModal"
-                class="my-3 d-flex justify-content-center game-btn">
-                Leader Board
-            </a>
-        </div>
+
+    <div class="row mx-auto mt-5 game-container d-flex justify-content-center">
+        <a href="quiz.html" class="my-3 d-flex justify-content-center game-btn">
+            Start Quiz
+        </a>
+        <a href="#" data-bs-toggle="modal" data-bs-target="#howToModal"
+            class="my-3 d-flex justify-content-center game-btn">
+            How To Play
+        </a>
+        <a href="#" data-bs-toggle="modal" data-bs-target="#LeaderBoardModal"
+            class="my-3 d-flex justify-content-center game-btn">
+            Leader Board
+        </a>
     </div>
 
     <!-- How To Play Modal -->
@@ -102,10 +101,20 @@
         </div>
     </div>
 
+    <footer class="text-center mt-auto">
+        <ul>
+            <li>© Anthony Griffiths 2023. All Rights Reserved.</li>
+            <li class="mt-3"><a href="https://github.com/Ant2210" target="_blank" class="game-btn"><i
+                        class="fa-brands fa-github fs-4 pe-1"></i>GitHub<i
+                        class="fa-brands fa-github fs-4 ps-1"></i></a></li>
+        </ul>
+    </footer>
+
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/92bb20ec43.js" crossorigin="anonymous"></script>
     <script src="assets/js/highscores.js"></script>
 </body>
 

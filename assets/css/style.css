@@ -5,10 +5,15 @@
 
 body {
     background-color: #ececec;
-    background: url(../images/background.jpg);
+    background: url(../images/background.jpg) no-repeat fixed center top;
     background-size: 100vw 100vh;
     color: #333333;
     font-family: "Press Start 2P", Arial, sans-serif;
+}
+
+footer ul {
+    padding: 0;
+    list-style: none;
 }
 
 h1 {
@@ -34,6 +39,7 @@ h1 {
     background-color: #2290fd;
     outline: 4px outset #333333;
     margin-top: 20px;
+    margin-bottom: 20px;
     width: 30rem;
     max-width: 90%;
     padding: 15px;
@@ -70,6 +76,19 @@ h1 {
     margin-top: 30vh;
 }
 
+.modal p {
+    margin: 0;
+}
+
+.modal ol {
+    padding: 0 10px;
+    margin: 0;
+}
+
+.modal li {
+    text-align: center;
+}
+
 .modal-content {
     background-color: #2290fd;
     border-radius: 0px;
@@ -77,11 +96,16 @@ h1 {
 }
 
 .modal-header {
+    text-align: center;
     border-bottom: none;
 }
 
 .modal-header h1 {
     text-decoration: underline;
+}
+
+.modal-body {
+    padding: 0
 }
 
 .modal-footer {
@@ -93,12 +117,8 @@ h1 {
     width: 60%;
 }
 
-.how-to-steps {
+.how-to-play ol {
     list-style: none;
-}
-
-.modal li {
-    text-align: center;
 }
 
 #LeaderBoardModal .modal-body {

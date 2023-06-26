@@ -4,6 +4,10 @@
     max-width: 90%;
 }
 
+.hud p {
+    margin-bottom: 0;
+}
+
 .hud-item {
     width: 14rem;
     font-size: 15px;
