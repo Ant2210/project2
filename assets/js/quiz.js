@@ -4,6 +4,7 @@ const progress = document.getElementById("progress");
 const currentScore = document.getElementById("current-score");
 const loading = document.getElementById("loading");
 const gameContainer = document.getElementById("game-container");
+const difficultyContainer = document.getElementById('difficulty-container');
 
 let questions = [];
 
@@ -11,11 +12,40 @@ let availableQuestions = [];
 let currentQuestion = [];
 let currentAnswers = [];
 let score = 0;
+let scoreToAdd = 10;
 let questionCounter = 1;
+let difficulty = "";
+
+const getDifficulty = () => {
+    difficultyContainer.addEventListener("click", (e) => {
+        switch(e.target.innerHTML) {
+            case "Easy":
+                difficulty = "easy";
+                difficultyContainer.classList.add("d-none");
+                loading.classList.remove("d-none");
+                callApi();
+                break;
+            case "Medium":
+                difficulty = "medium";
+                scoreToAdd = 15;
+                difficultyContainer.classList.add("d-none");
+                loading.classList.remove("d-none");
+                callApi();
+                break;
+            case "Hard":
+                difficulty = "hard";
+                scoreToAdd = 20;
+                difficultyContainer.classList.add("d-none");
+                loading.classList.remove("d-none");
+                callApi();
+                break;
+        }
+    });
+}
 
 async function callApi() {
     const response = await fetch(
-        "https://opentdb.com/api.php?amount=10&category=15&difficulty=easy&type=multiple"
+        `https://opentdb.com/api.php?amount=10&category=15&difficulty=${difficulty}&type=multiple`
     );
     if (response.status >= 200 && response.status < 299) {
         data = await response.json();
@@ -60,7 +90,7 @@ const checkAnswer = (e) => {
     });
 
     if (e.target.innerHTML == currentQuestion.correct_answer) {
-        score += 10;
+        score += scoreToAdd;
         currentScore.innerHTML = score;
         e.target.classList.add("correct");
 
@@ -90,4 +120,4 @@ const checkAnswer = (e) => {
     }
 };
 
-callApi();
+getDifficulty();
