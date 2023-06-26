@@ -73,7 +73,7 @@ h1 {
 /* MODAL STYLING */
 
 .modal {
-    margin-top: 30vh;
+    margin-top: 20vh;
 }
 
 .modal p {
@@ -109,7 +109,7 @@ h1 {
 }
 
 .modal-body {
-    padding: 0
+    padding: 0 20px;
 }
 
 .modal-footer {
@@ -130,6 +130,21 @@ h1 {
 .modal-open {
     overflow-y: inherit !important;
 }
+
+#howToModal {
+    margin-top: 5vh;
+}
+
+#howToModal p {
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    #howToModal {
+      margin-top: 25px;
+      font-size: 12px;
+    }
+  }
 
 /* SCROLL BAR */
 ::-webkit-scrollbar {
