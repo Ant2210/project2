@@ -10,7 +10,7 @@
 
 .hud-item {
     width: 14rem;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 .correct {
@@ -19,4 +19,11 @@
 
 .incorrect {
     background-color: red;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 768px) {
+    .hud-item {
+        font-size: 15px;
+    }
 }

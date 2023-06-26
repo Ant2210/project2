@@ -7,8 +7,17 @@ body {
     background: url(../images/background.jpg) no-repeat fixed center top;
     background-size: 100vw 100vh;
     background-color: #65D3F0;
-    color: #333333;
+    color: #161616;
     font-family: "Press Start 2P", Arial, sans-serif;
+    font-size: 15px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 20px;
 }
 
 footer ul {
@@ -16,17 +25,12 @@ footer ul {
     list-style: none;
 }
 
-h1 {
-    font-size: 40px;
-}
-
 .emoji {
-    font-size: 40px;
+    font-size: 35px;
 }
 
 .header-container {
     background-color: #2290fd;
-    color: #333333;
     outline: 4px outset #333333;
     margin-top: 20px;
     width: 30rem;
@@ -57,11 +61,11 @@ h1 {
     outline: 4px outset #333333;
     border: none;
     background-color: rgb(255, 223, 41);
+    color: #161616;
     width: 375px;
     max-width: 90%;
     text-decoration: none;
     padding: 10px;
-    color: #333333;
     transition: outline 150ms ease-in-out, transform 150ms ease-in-out;
 }
 
@@ -74,6 +78,10 @@ h1 {
 
 .modal {
     margin-top: 20vh;
+}
+
+.modal-title {
+    text-decoration: underline;
 }
 
 .modal p {
@@ -139,13 +147,6 @@ h1 {
     margin-bottom: 10px;
 }
 
-@media screen and (max-width: 768px) {
-    #howToModal {
-      margin-top: 25px;
-      font-size: 12px;
-    }
-  }
-
 /* SCROLL BAR */
 ::-webkit-scrollbar {
     width: 25px;
@@ -187,3 +188,22 @@ h1 {
 ::-webkit-scrollbar-button:vertical:single-button:increment:hover {
     border-color: #777777 transparent transparent transparent;
 }
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 12px;
+    }
+    
+    h1 {
+        font-size: 30px;
+    }
+    
+    h2 {
+        font-size: 15px;
+    }
+    
+    #howToModal {
+      margin-top: 25px;
+    }
+  }
