@@ -71,7 +71,7 @@ const loadQuestion = () => {
     currentAnswers = currentQuestion.incorrect_answers.concat(
         currentQuestion.correct_answer
     );
-    // Randomise array code obtained localStorage.setItem("mostRecentScore", score) -> https://www.slingacademy.com/article/;ways-to-shuffle-an-array-in-javascript/?utm_content=cmp-true
+    // Randomise array code obtained here -> https://www.slingacademy.com/article/;ways-to-shuffle-an-array-in-javascript/?utm_content=cmp-true
     currentAnswers.sort(() => Math.random() - 0.5);
 
     let i = 0;

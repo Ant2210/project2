@@ -189,7 +189,7 @@ footer ul {
     border-color: #333333 transparent transparent transparent;
 }
 
-::-webkit-scrollbar-button:vertical:single-button:increment:hover {
+::-webkit-scrollbar-button:single-button:vertical:increment:hover {
     border-color: #777777 transparent transparent transparent;
 }
 
