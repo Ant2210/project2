@@ -52,6 +52,11 @@
         <a href="#" class="my-3 d-flex justify-content-center game-btn choices"></a>
     </div>
 
+    <div class="row mx-auto d-flex justify-content-center">
+        <a href="#" id="quit-btn" class="my-3 d-flex justify-content-center game-btn px-5">Quit</a>
+    </div>
+
+
     <!-- Error Response Modal -->
 
     <a href="#" data-bs-toggle="modal" data-bs-target="#errorModal" id="launch-error-modal"></a>
@@ -78,6 +83,37 @@
             </div>
         </div>
     </div>
+
+        <!-- Quit Modal -->
+
+        <a href="#" data-bs-toggle="modal" data-bs-target="#quitModal" id="launch-quit-modal"></a>
+
+        <div class="modal fade" id="quitModal" tabindex="-1" aria-labelledby="quitModal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header justify-content-center">
+                        <span class="emoji">&#128557;</span>
+                        <h2 class="modal-title ms-2" id="quitModalLabel">
+                            Quit!
+                        </h2>
+                        <span class="emoji">&#128557;</span>
+                    </div>
+                    <div class="modal-body">
+                        <p class="pb-2">
+                            Are you sure you want to quit?
+                        </p>
+                        <p>
+                            You will be taken home and lose any game progress!
+                        </p>
+                    </div>
+                    <div class="modal-footer justify-content-center">
+                        <a href="/index.html" class="my-3 d-flex justify-content-center game-btn">Yes, take me home</a>
+                        <a href="#" id="modal-close-btn" class="my-3 d-flex justify-content-center game-btn"
+                        data-bs-dismiss="modal">Nah, I'll stick around</a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     <footer class="text-center mt-auto">
         <ul>

@@ -74,6 +74,10 @@ footer ul {
     transform: translateY(1px);
 }
 
+#quit-btn {
+    width: auto;
+}
+
 /* MODAL STYLING */
 
 .modal {

@@ -5,6 +5,7 @@ const currentScore = document.getElementById("current-score");
 const loading = document.getElementById("loading");
 const gameContainer = document.getElementById("game-container");
 const difficultyContainer = document.getElementById('difficulty-container');
+const quit = document.getElementById("quit-btn");
 
 let questions = [];
 
@@ -22,6 +23,7 @@ const getDifficulty = () => {
             case "Easy":
                 difficulty = "easy";
                 difficultyContainer.classList.add("d-none");
+                quit.classList.add("d-none");
                 loading.classList.remove("d-none");
                 callApi();
                 break;
@@ -29,6 +31,7 @@ const getDifficulty = () => {
                 difficulty = "medium";
                 scoreToAdd = 15;
                 difficultyContainer.classList.add("d-none");
+                quit.classList.add("d-none");
                 loading.classList.remove("d-none");
                 callApi();
                 break;
@@ -36,6 +39,7 @@ const getDifficulty = () => {
                 difficulty = "hard";
                 scoreToAdd = 20;
                 difficultyContainer.classList.add("d-none");
+                quit.classList.add("d-none");
                 loading.classList.remove("d-none");
                 callApi();
                 break;
@@ -55,6 +59,7 @@ async function callApi() {
         loadQuestion();
         loading.classList.add("d-none");
         gameContainer.classList.remove("d-none");
+        quit.classList.remove("d-none");
     } else document.getElementById("launch-error-modal").click();
 }
 
@@ -119,5 +124,9 @@ const checkAnswer = (e) => {
         }, 1000);
     }
 };
+
+quit.addEventListener("click", () => {
+    document.getElementById("launch-quit-modal").click();
+});
 
 getDifficulty();
