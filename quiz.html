@@ -8,7 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Search engine specific Meta Tags & Links -->
-    <meta name="description" content="Gamer Quiz Champion - A quiz game for the video game aficionado. Test your video game knowledge.">
+    <meta name="description"
+        content="Gamer Quiz Champion - A quiz game for the video game aficionado. Test your video game knowledge.">
     <meta name="keywords" content="quiz, video games, retro games, arcade games, gamer quizzes">
     <link rel="canonical" href="https://ant2210.github.io/project2/">
     <meta name="robots" content="index, follow">
@@ -16,7 +17,8 @@
     <!-- Social Media Integration for Facebook, LinkedIn & Google - Code from Abi Harrison Meta Tags Webinar - https://www.youtube.com/watch?v=t-4qqmikIqk -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Gamer Quiz Champion">
-    <meta property="og:description" content="Gamer Quiz Champion - A quiz game for the video game aficionado. Test your video game knowledge.">
+    <meta property="og:description"
+        content="Gamer Quiz Champion - A quiz game for the video game aficionado. Test your video game knowledge.">
     <meta name="image" property="og:image" content="assets/images/metaimage.jpg">
     <meta property="og:image:width" content="700">
     <meta property="og:image:height" content="525">
@@ -37,11 +39,15 @@
 </head>
 
 <body class="d-flex flex-column min-vh-100">
+
+    <!-- Container for main page title -->
     <div class="mx-auto header-container d-flex justify-content-center text-center">
         <h1>
             Gamer<br><span>&#127942; </span> Quiz <span> &#127942;</span><br>Champion
         </h1>
     </div>
+
+    <!-- Game HUD to display current question number and current score -->
     <div class="hud mx-auto d-flex justify-content-between">
         <div class="hud-item text-center">
             <p>Question<br><span id="progress">1</span>/10</p>
@@ -51,10 +57,12 @@
         </div>
     </div>
 
+    <!-- Loading text which only shows whilst quiz is awaiting API data -->
     <div id="loading" class="my-5 d-none">
         <h2 class="text-center">Loading...</h2>
     </div>
 
+    <!-- Difficulty container -->
     <div id="difficulty-container" class="row mx-auto game-container d-flex justify-content-center">
         <h2 class="text-center">Select Difficulty</h2>
         <a href="#" class="my-3 d-flex justify-content-center game-btn">Easy</a>
@@ -62,6 +70,7 @@
         <a href="#" class="my-3 d-flex justify-content-center game-btn">Hard</a>
     </div>
 
+    <!-- Main game container -->
     <div id="game-container" class="row mx-auto game-container d-flex justify-content-center d-none">
         <h2 id="question"></h2>
         <a href="#" class="my-3 d-flex justify-content-center game-btn choices"></a>
@@ -76,7 +85,6 @@
 
 
     <!-- Error Response Modal -->
-
     <a href="#" data-bs-toggle="modal" data-bs-target="#errorModal" id="launch-error-modal"></a>
 
     <div class="modal fade" id="errorModal" tabindex="-1" aria-labelledby="errorModal" aria-hidden="true">
@@ -102,37 +110,37 @@
         </div>
     </div>
 
-        <!-- Quit Modal -->
+    <!-- Quit Modal -->
+    <a href="#" data-bs-toggle="modal" data-bs-target="#quitModal" id="launch-quit-modal"></a>
 
-        <a href="#" data-bs-toggle="modal" data-bs-target="#quitModal" id="launch-quit-modal"></a>
-
-        <div class="modal fade" id="quitModal" tabindex="-1" aria-labelledby="quitModal" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header justify-content-center">
-                        <span class="emoji">&#128557;</span>
-                        <h2 class="modal-title ms-2" id="quitModalLabel">
-                            Quit!
-                        </h2>
-                        <span class="emoji">&#128557;</span>
-                    </div>
-                    <div class="modal-body">
-                        <p class="pb-2">
-                            Are you sure you want to quit?
-                        </p>
-                        <p>
-                            You will be taken home and lose any game progress!
-                        </p>
-                    </div>
-                    <div class="modal-footer justify-content-center">
-                        <a href="index.html" class="my-3 d-flex justify-content-center game-btn">Yes, take me home</a>
-                        <a href="#" id="modal-close-btn" class="my-3 d-flex justify-content-center game-btn"
+    <div class="modal fade" id="quitModal" tabindex="-1" aria-labelledby="quitModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header justify-content-center">
+                    <span class="emoji">&#128557;</span>
+                    <h2 class="modal-title ms-2" id="quitModalLabel">
+                        Quit!
+                    </h2>
+                    <span class="emoji">&#128557;</span>
+                </div>
+                <div class="modal-body">
+                    <p class="pb-2">
+                        Are you sure you want to quit?
+                    </p>
+                    <p>
+                        You will be taken home and lose any game progress!
+                    </p>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <a href="index.html" class="my-3 d-flex justify-content-center game-btn">Yes, take me home</a>
+                    <a href="#" id="modal-close-btn" class="my-3 d-flex justify-content-center game-btn"
                         data-bs-dismiss="modal">Nah, I'll stick around</a>
-                    </div>
                 </div>
             </div>
         </div>
+    </div>
 
+    <!-- Footer -->
     <footer class="text-center mt-auto">
         <ul>
             <li>© Anthony Griffiths 2023. All Rights Reserved.</li>

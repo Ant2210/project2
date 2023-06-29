@@ -1,3 +1,4 @@
+/* Hud Styling */
 .hud {
     margin-top: 20px;
     width: 30rem;
@@ -13,6 +14,7 @@
     font-size: 20px;
 }
 
+/* Styling for correct and incorrect answers */
 .correct {
     background-color: green;
 }
@@ -21,7 +23,7 @@
     background-color: red;
 }
 
-/* MEDIA QUERIES */
+/* Media Queries */
 @media screen and (max-width: 768px) {
     .hud-item {
         font-size: 15px;

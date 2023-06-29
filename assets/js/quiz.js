@@ -1,3 +1,4 @@
+// Constants to make accessing elements easier during coding
 const question = document.getElementById("question");
 const choices = Array.from(document.getElementsByClassName("choices"));
 const progress = document.getElementById("progress");
@@ -7,6 +8,7 @@ const gameContainer = document.getElementById("game-container");
 const difficultyContainer = document.getElementById('difficulty-container');
 const quit = document.getElementById("quit-btn");
 
+// Variables to hold questions, answers score and difficulty
 let questions = [];
 
 let availableQuestions = [];
@@ -17,9 +19,13 @@ let scoreToAdd = 10;
 let questionCounter = 1;
 let difficulty = "";
 
+/* Function that listens for which difficulty level is selected,
+then sets the difficulty variable, hides the difficulty container,
+hides the quit button (for aesthetics), then shows the loading
+text (again for aesthetics) before calling the API function. */
 const getDifficulty = () => {
     difficultyContainer.addEventListener("click", (e) => {
-        switch(e.target.innerHTML) {
+        switch (e.target.innerHTML) {
             case "Easy":
                 difficulty = "easy";
                 difficultyContainer.classList.add("d-none");
@@ -47,6 +53,16 @@ const getDifficulty = () => {
     });
 }
 
+/* Function that attempts to call the data from the external API to retrieve 
+questions matching the difficulty level set by the get difficulty function.
+
+If the data is retrieved and the response status is between 200 & 299 it
+saves the questions retrieved to the questions variable then creates a shallow
+copy of the questions in availableQuestions which can then have methods applied to
+it without effecting the original data. 
+
+It then calls the loadQuestion function, hides the loading text, and displays the
+game container and quit button. */
 async function callApi() {
     const response = await fetch(
         `https://opentdb.com/api.php?amount=10&category=15&difficulty=${difficulty}&type=multiple`
@@ -63,6 +79,15 @@ async function callApi() {
     } else document.getElementById("launch-error-modal").click();
 }
 
+/* Function that selects a random question from the availableQuestions array,
+then removes it from the array so it can't be selected as a future question
+and displays the question within the game container. 
+
+The currentAnswers array is then created using the correct answer and 3
+incorrect answers. These are then randomised and displayed within the 
+choices boxes within the game container and calls the awaitAnswer function.
+
+Randomise array code obtained here -> https://www.slingacademy.com/article/;ways-to-shuffle-an-array-in-javascript/?utm_content=cmp-true */
 const loadQuestion = () => {
     let random = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions.splice(random, 1)[0];
@@ -71,7 +96,7 @@ const loadQuestion = () => {
     currentAnswers = currentQuestion.incorrect_answers.concat(
         currentQuestion.correct_answer
     );
-    // Randomise array code obtained here -> https://www.slingacademy.com/article/;ways-to-shuffle-an-array-in-javascript/?utm_content=cmp-true
+
     currentAnswers.sort(() => Math.random() - 0.5);
 
     let i = 0;
@@ -83,12 +108,24 @@ const loadQuestion = () => {
     awaitAnswer();
 };
 
+/* Function that listens for a click on each of the choice boxes and
+then calls the checkAnswer function. */
 const awaitAnswer = () => {
     choices.forEach((choice) => {
         choice.addEventListener("click", checkAnswer);
     });
 };
 
+/* Function that checks if the inner HTML/text of the chosen answer
+matches the correct answer stored in the currentQuestion array.
+
+It will indicate if the answer is correct or incorrect by changing
+the box colour to green or red one second, increase the score if 
+correct and increase the progress counter in the HUD then loads the
+next question.
+
+If there are no more questions to be loaded the current score is logged
+in local storage and the user is redirected to the end page. */
 const checkAnswer = (e) => {
     choices.forEach((choice) => {
         choice.removeEventListener("click", checkAnswer);
@@ -125,8 +162,10 @@ const checkAnswer = (e) => {
     }
 };
 
+// Event listener for the quit button to launch the quit modal
 quit.addEventListener("click", () => {
     document.getElementById("launch-quit-modal").click();
 });
 
+// Calls the getDifficulty function to start the game
 getDifficulty();

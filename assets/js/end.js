@@ -1,3 +1,4 @@
+// Constants to make accessing elements easier during coding
 const saveButton = document.getElementById("save-btn");
 const launchValidationModal = document.getElementById("launch-validation-modal");
 const launchCountdown = document.getElementById("launch-countdown-modal");
@@ -7,15 +8,28 @@ const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
 const finalScore = document.getElementById("final-score");
 finalScore.innerHTML = mostRecentScore;
 
+/* Function that inserts a crying emoji if the user scores 0 or a
+medal emoji if the score is more than 0.
+*/
 const finalScoreEmoji = document.getElementsByClassName("final-score-emoji");
 Array.from(finalScoreEmoji).forEach((emoji) => {
     parseInt(mostRecentScore) === 0 ? (emoji.innerHTML = "&#128557;") : (emoji.innerHTML = "&#127941;");
 });
 
+/* Tutorial found here -> https://www.youtube.com/watch?v=DFhmNLKwwGw
+for saving high scores to the local storage.
+
+Advice found here for checking the value of an input field -> https://stackoverflow.com/questions/3937513/javascript-validation-for-empty-input-field
+
+Function that disables the default function of a button, ensures the input
+field hasn't been left blank. If a valid name is input this then saves the score
+and username as an object, add it to the highscores array, and reorders from 
+highest to lowest and converts it to a string for storage in the local storage.
+
+Then calls the redirectToGame function. */
 const saveScore = () => {
     saveButton.addEventListener("click", (e) => {
         e.preventDefault();
-        // Check the value of an input field found here -> https://stackoverflow.com/questions/3937513/javascript-validation-for-empty-input-field
         const userInput = document.forms["score-form"]["username"].value;
         if (userInput == null || userInput == "") {
             launchValidationModal.click();
@@ -34,6 +48,9 @@ const saveScore = () => {
     });
 };
 
+/* Launches a modal to confirm submission of a new high score then 
+redirects the user to the homepage where they can check their score
+in leader board. */
 const redirectToGame = () => {
     let timeLeft = 10;
     launchCountdown.click();
@@ -46,4 +63,5 @@ const redirectToGame = () => {
     }, 1000);
 };
 
+// Calls the save score function
 saveScore();
