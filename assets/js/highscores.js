@@ -5,11 +5,10 @@ const highScores = JSON.parse(localStorage.getItem("highScores"));
 /* Tutorial found here -> https://www.youtube.com/watch?v=DFhmNLKwwGw
 for saving high scores to the local storage. 
 
-Function retrieves the high scores from local storage and converts
-back to an array, which then can be iterated over and displayed
-on the DOM as a list item. */
-highScoresList.innerHTML = highScores
-    .map((score) => {
-        return `<li>${score.name} - ${score.score}</li>`;
-    })
-    .join("");
+Creates a new variable which is an array like object by iterating over the highScores
+array but with no separators so they are formatted correctly in the DOM */
+let updateList = highScores.map(score => `<li>${score.name} - ${score.score}</li>`).join("");
+
+/* Replaces the default text in the Leader Board modal with the updated
+high scores list. */
+highScoresList.innerHTML = `<ol>${updateList}</ol>`;
