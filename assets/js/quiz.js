@@ -7,6 +7,8 @@ const loading = document.getElementById("loading");
 const gameContainer = document.getElementById("game-container");
 const difficultyContainer = document.getElementById('difficulty-container');
 const quit = document.getElementById("quit-btn");
+const errorModal = new bootstrap.Modal(document.getElementById("errorModal"));
+const quitModal = new bootstrap.Modal(document.getElementById("quitModal"));
 
 // Variables to hold questions, answers score and difficulty
 let questions = [];
@@ -56,18 +58,18 @@ const getDifficulty = () => {
 /* Function that attempts to call the data from the external API to retrieve 
 questions matching the difficulty level set by the get difficulty function.
 
-If the data is retrieved and the response status is between 200 & 299 it
-saves the questions retrieved to the questions variable then creates a shallow
-copy of the questions in availableQuestions which can then have methods applied to
-it without effecting the original data. 
+If the data is retrieved it saves the questions retrieved to the questions
+variable then creates a shallow copy of the questions in availableQuestions
+which can then have methods applied to it without effecting the original data. 
 
 It then calls the loadQuestion function, hides the loading text, and displays the
-game container and quit button. */
+game container and quit button. 
+
+If there is any issue retrieving the data an error is logged and the user is informed
+via a modal */
 async function callApi() {
-    const response = await fetch(
-        `https://opentdb.com/api.php?amount=10&category=15&difficulty=${difficulty}&type=multiple`
-    );
-    if (response.status >= 200 && response.status < 299) {
+    try {
+        const response = await fetch(`https://opentdb.com/api.php?amount=10&category=15&difficulty=${difficulty}&type=multiple`);
         data = await response.json();
         questions = data.results;
         availableQuestions = [...questions];
@@ -76,7 +78,10 @@ async function callApi() {
         loading.classList.add("d-none");
         gameContainer.classList.remove("d-none");
         quit.classList.remove("d-none");
-    } else document.getElementById("launch-error-modal").click();
+    } catch (error) {
+        console.log(error);
+        errorModal.show();
+    }
 }
 
 /* Function that selects a random question from the availableQuestions array,
@@ -164,7 +169,7 @@ const checkAnswer = (e) => {
 
 // Event listener for the quit button to launch the quit modal
 quit.addEventListener("click", () => {
-    document.getElementById("launch-quit-modal").click();
+    quitModal.show();
 });
 
 // Calls the getDifficulty function to start the game

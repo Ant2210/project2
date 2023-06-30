@@ -1,11 +1,13 @@
 // Constants to make accessing elements easier during coding
 const saveButton = document.getElementById("save-btn");
-const launchValidationModal = document.getElementById("launch-validation-modal");
-const launchCountdown = document.getElementById("launch-countdown-modal");
+const launchCountdown = new bootstrap.Modal(document.getElementById("countdownModal"));
+const launchValidation = new bootstrap.Modal(document.getElementById("validationModal"));
 
 const mostRecentScore = localStorage.getItem("mostRecentScore");
 const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
 const finalScore = document.getElementById("final-score");
+
+// Sets the final score in the DOM to the most recent score
 finalScore.innerHTML = mostRecentScore;
 
 /* Function that inserts a crying emoji if the user scores 0 or a
@@ -32,7 +34,7 @@ const saveScore = () => {
         e.preventDefault();
         const userInput = document.forms["score-form"]["username"].value;
         if (userInput == null || userInput == "") {
-            launchValidationModal.click();
+            launchValidation.show();
         } else {
             const score = {
                 score: mostRecentScore,
@@ -53,8 +55,8 @@ redirects the user to the homepage where they can check their score
 in leader board. */
 const redirectToGame = () => {
     let timeLeft = 10;
-    launchCountdown.click();
-    let downloadTimer = setInterval(() => {
+    launchCountdown.show();
+    setInterval(() => {
         timeLeft--;
         document.getElementById("countdown-timer").innerHTML = timeLeft;
         if (timeLeft <= 0) {
