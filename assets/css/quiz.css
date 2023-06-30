@@ -16,11 +16,11 @@
 
 /* Styling for correct and incorrect answers */
 .correct {
-    background-color: green;
+    background-color: #008000;
 }
 
 .incorrect {
-    background-color: red;
+    background-color: #ff0000;
 }
 
 /* Media Queries */

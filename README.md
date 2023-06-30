@@ -1,73 +1,90 @@
-<h1 align="center" id="title">Quiz Champion</h1>
+<h1 align="center" id="title"><img src="./assets/images/readmetitle.webp" alt="Title -  Gamer Quiz Champion"></h1>
 
-A few paragrapgs introduction
+Gamer Quiz Champion is a quiz game for the video game aficionado. Answer 10 questions all about video games and try and beat the top score. 
+
+There are three levels of difficulty, easy questions score 10 points, medium questions score 15 points and hard questions score 20 points!
 
 [View the live project here.](https://ant2210.github.io/project2/)
 
-Image here ->
+<img src="./assets/images/websitemockup.webp" alt="Image of Gamer Quiz Champion website on different devices" style="border-radius: 12px;">
 
 ## User Experience (UX) 
 
--   ### User stories
+### User stories
 
-    -   #### First Time Visitor Goals
+#### First Time Visitor Goals
 
-    1.  Sample 
-    2.  Sample
-    3.  Sample
-    4.  Sample 
+-  As a first time visitor, I want to find out find out what the quiz is about and how to play.
+-  As a first time visitor, I want to be able to navigate the site quickly and easily, it should be intuitive and obvious what to do next.
+-  As a First Time Visitor, I want to be able to play the quiz any time and on any of my internet connected devices and therefore responsive. 
+-  As a First Time Visitor, I want the quiz to be fun and inviting. 
 
-    -   #### Returning Visitor Goals
+#### Returning Visitor Goals
 
-    1.  Sample
-    2.  Sample
-    3.  Sample
+-  As a returning visitor, I want to be able to keep track of my previous scores so I can try and improve upon it. 
+-  As a returning visitor, I want to be able to adjust the difficulty as my knowledge improves.
+-  As a returning visitor, I don't want to answer the same questions over and over so as not to get board of the quiz too quickly.
 
-    -   #### Frequent User Goals
-    1.  Sample.
-    2.  Sample
+#### Frequent User Goals
+       
+- A frequent users requirements would be much the same as a returning visitor given fairly basic nature of the quiz. A frequent user may however want to be able to compare scores with friends.
 
--   ### Design
-    -   #### Colour Scheme
-		The main colour scheme was selected with colour psychology and accessibility in mind. 
-		
-		-	#### Colour Psychology
-			Sample
+### Design
+#### Colour Scheme
+The main considerations for the colour scheme were aesthetics and accessibility. As this is a video game quiz I decided to go for a retro theme and the blue colour chosen is reminiscent of the rolling sky backgrounds found in a lot of retro games, which is then further complemented by the background image chosen.<br>
+When choosing the main text colour, I wanted a dark contrasting colour but didn't want to use black `#ffffff` as I found this to be quite harsh, so opted for a slightly softened black/grey colour.<br>
+I then used a colour picker to select a backup background colour the same colour as the sky in the background image. This however doesn't effect accessibility in any way as all text is overlaid within a "container" which is the main blue colour.<br>
+When Selecting the button colours I wanted something basic but vibrant that still sticks with the retro them but contrasts well against the blue colour. During the main quiz the buttons flash green for correct answers and red for incorrect answers which are fairly intuitive colours for this purpose.
 
-		-   #### Colour Accessibility
-			Sample
+  -   ##### Colours Used
+
+        - Main colour theme - `#2290fd` <span style="background-color: #2290fd; border: 1px solid black">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        - Text colour - `#161616` <span style="background-color: #161616; border: 1px solid black">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        - Backup background colour - `#65D3F0` <span style="background-color: #65D3F0; border: 1px solid black">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        - Button colour - `#ffdf29` <span style="background-color: #ffdf29; border: 1px solid black">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        - Correct answer button colour - `#008000` <span style="background-color: #008000; border: 1px solid black">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        - Incorrect answer button colour - `#ff0000` <span style="background-color: #ff0000; border: 1px solid black">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+
+#### Colour Accessibility
 			
-			For further information on these guidelines, you can visit the following link. [Web Content Accessibility Guidelines (WCAG) 2.1 (w3.org)](https://www.w3.org/TR/WCAG21/)
+When deciding on the shade of blue and black to use, I used Coolors.co contract checker tool  which can be found [here](https://coolors.co/contrast-checker/000000-ffffff), to ensure the colours chosen met the WCAG 2.1 AA guidelines as minimum and AAA guidelines where possible.<br>
+For further information on these guidelines, you can visit the following link. [Web Content Accessibility Guidelines (WCAG) 2.1 (w3.org)](https://www.w3.org/TR/WCAG21/)
+        
+
+  -   ##### Colour Palette and Results
+        Sample
+
+        Images here ->
 
 
-		-   #### Colour Palette and Results
-			Sample
-
-            Images here ->
+#### Typography
+Fonts chosen and why including fallback font
 
 
-    -   #### Typography
-        - Fonts chosen and why including fallback font
-
-
-    -   #### Imagery
+#### Imagery
         -   Where was imagery taken from
 
 
-*   ### Wireframes
+### Wireframes
 
-    Images Here ->
+Images Here ->
 
-*   ### Features
+### Features
 
-    -   Feature list
-    -   Feature list
-    -   Feature list
+-   Feature list
+-   Feature list
+-   Feature list
 
-*   ### Accessibility
-    -   Accessibility considered
-    -   Accessibility considered
-    -   Accessibility considered
+### Future Features
+
+-   Feature list
+-   Feature list
+-   Feature list
+
+### Accessibility
+-   Accessibility considered
+-   Accessibility considered
+-   Accessibility considered
 
 [Back to top](#title)  
 [Back to contents](#contents)
@@ -76,12 +93,12 @@ Image here ->
 
 ### Languages Used
 
--   HTML
--   CSS
+  -   HTML
+  -   CSS
 
 ### Frameworks, Libraries & Programs Used
 
--   [Bootstrap](https://getbootstrap.com/) Version 5.3.0 - For...
+  -   [Bootstrap](https://getbootstrap.com/) Version 5.3.0 - For...
 
 
 [Back to top](#title)  
@@ -108,19 +125,19 @@ The site has altogether in one way or another been used and tested on the follow
 
 ### Testing User Stories from User Experience (UX) Section
 
--   #### First Time Visitor Goals
+#### First Time Visitor Goals
 
+1.  As a First Time Visitor, I want to...
+    -	How was this achieved
+    - Image here ->
 1.  As a First Time Visitor, I want to...
     -	How was this achieved
     - Image here ->
 2.  As a First Time Visitor, I want to...
     -	How was this achieved
     - Image here ->
-3.  As a First Time Visitor, I want to...
-    -	How was this achieved
-    - Image here ->
 
--   #### Returning Visitor Goals
+#### Returning Visitor Goals
 
 1.  As a returning Visitor, I want to...
     -	How was this achieved
@@ -132,7 +149,7 @@ The site has altogether in one way or another been used and tested on the follow
     -	How was this achieved
     - Image here ->
 
--   #### Frequent User Goals
+#### Frequent User Goals
 
 1.  As a frequent user, I want to...
     -	How was this achieved
@@ -147,88 +164,103 @@ The site has altogether in one way or another been used and tested on the follow
 ### Further Testing
 <br>
 
--   HTML Validator - [W3C](https://validator.w3.org/)
-    -   Homepage
+#### HTML Validator - [W3C](https://validator.w3.org/)
+1.   Homepage
 
-        [Homepage HTML Validator Test 1](www.google.com)
+[Homepage HTML Validator Test 1](www.google.com)
 
-        [Homepage HTML Validator Test 2](www.google.com)
+[Homepage HTML Validator Test 2](www.google.com)
 
-        -   Issue 1
+-   Issue 1
+-   Issue 2
 
-        -   Issue 2
 
+2.   Quiz Page
 
-    -   Quiz Page
+[Portfolio Page HTML Validator Test 1](www.google.com)
 
-        [Portfolio Page HTML Validator Test 1](www.google.com)
+[Portfolio Page HTML Validator Test 2](www.google.com)
 
-        [Portfolio Page HTML Validator Test 2](www.google.com)
-
-        -   Issue 1
-        -   Issue 2
-
-<br>
-
--   CSS Validator - [W3C](https://jigsaw.w3.org/css-validator/)
-    -   Homepage
-
-        [CSS Validator Test 1](www.google.com)
-
-        [CSS Validator Test 2](www.google.com)
-
-        -   Issue 1
-        -   Issue 2
-
+-   Issue 1
+-   Issue 2
 
 <br>
 
--   Lighthouse
-    
-    - Home Page
-      - Issue 1
-      - Issue 2
-      - Image 1
-      - Image 2
+#### CSS Validator - [W3C](https://jigsaw.w3.org/css-validator/)
+1.   Homepage
+
+[Homepage HTML Validator Test 1](www.google.com)
+
+[Homepage HTML Validator Test 2](www.google.com)
+
+-   Issue 1
+-   Issue 2
+
+
+2.   Quiz Page
+
+[Portfolio Page HTML Validator Test 1](www.google.com)
+
+[Portfolio Page HTML Validator Test 2](www.google.com)
+
+-   Issue 1
+-   Issue 2
 
 <br>
 
--   Browser Errors
-1. Chrome
-    - Issue 1
-    - Issue 2
-    - Image 1
-    - Image 2
-  
-2. Edge
-    - Issue 1
-    - Issue 2
-    - Image 1
-    - Image 2
-  
-3. Firefox
-    - Issue 1
-    - Issue 2
-    - Image 1
-    - Image 2
+#### Lighthouse
+1.   Homepage
+
+[Homepage HTML Validator Test 1](www.google.com)
+
+[Homepage HTML Validator Test 2](www.google.com)
+
+-   Issue 1
+-   Issue 2
+
+
+2.   Quiz Page
+
+[Portfolio Page HTML Validator Test 1](www.google.com)
+
+[Portfolio Page HTML Validator Test 2](www.google.com)
+
+-   Issue 1
+-   Issue 2
+
+<br>
+
+#### Browser Errors
+1.   Homepage
+
+[Homepage HTML Validator Test 1](www.google.com)
+
+[Homepage HTML Validator Test 2](www.google.com)
+
+-   Issue 1
+-   Issue 2
+
+
+2.   Quiz Page
+
+[Portfolio Page HTML Validator Test 1](www.google.com)
+
+[Portfolio Page HTML Validator Test 2](www.google.com)
+
+-   Issue 1
+-   Issue 2
 
 <br>
 
 ### Bugs
-
--   Bug 1
-
--   Bug 2
-
--   Bug 3
+1. Bug 1
+2. Bug 2
+3. Bug 3
 
 ### Unsolved Bugs
- 
--   Bug 1
-
--   Bug 2
-
--   Bug 3
+1. Bug 1
+2. Bug 2
+3. Bug 3
 
 [Back to top](#title)  
 [Back to contents](#contents)
