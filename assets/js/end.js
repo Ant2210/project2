@@ -15,7 +15,7 @@ medal emoji if the score is more than 0.
 */
 const finalScoreEmoji = document.getElementsByClassName("final-score-emoji");
 Array.from(finalScoreEmoji).forEach((emoji) => {
-    parseInt(mostRecentScore) === 0 ? (emoji.innerHTML = "&#128557;") : (emoji.innerHTML = "&#127941;");
+    parseInt(mostRecentScore) === 0 ? emoji.innerHTML = "&#128557;" : emoji.innerHTML = "&#127941;";
 });
 
 /* Tutorial found here -> https://www.youtube.com/watch?v=DFhmNLKwwGw
@@ -32,7 +32,7 @@ Then calls the redirectToGame function. */
 const saveScore = () => {
     saveButton.addEventListener("click", (e) => {
         e.preventDefault();
-        const userInput = document.forms["score-form"]["username"].value;
+        const userInput = document.forms.scoreForm.username.value;
         if (userInput == null || userInput == "") {
             launchValidation.show();
         } else {

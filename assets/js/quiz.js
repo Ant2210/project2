@@ -70,7 +70,7 @@ via a modal */
 async function callApi() {
     try {
         const response = await fetch(`https://opentdb.com/api.php?amount=10&category=15&difficulty=${difficulty}&type=multiple`);
-        data = await response.json();
+        const data = await response.json();
         questions = data.results;
         availableQuestions = [...questions];
 
