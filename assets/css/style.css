@@ -171,7 +171,7 @@ footer ul {
     height: 20px;
 }
 
-/* Scroll Bar Up Button */
+/* Scroll Bar Up Button - Advice on styling scroll bar buttons found here -> https://stackoverflow.com/questions/47576815/how-to-add-arrows-with-webkit-scrollbar-button*/
 ::-webkit-scrollbar-button:single-button:vertical:decrement {
     border-width: 0px 12px 12px 12px;
     border-color: transparent transparent #333333 transparent;
