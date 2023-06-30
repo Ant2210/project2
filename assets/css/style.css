@@ -4,7 +4,7 @@
 
 /* Global styles and utilities */
 body {
-    background: url(../images/background.jpg) no-repeat fixed center top;
+    background: url(../images/background.webp) no-repeat fixed center top;
     background-size: 100vw 100vh;
     background-color: #65D3F0;
     color: #161616;
