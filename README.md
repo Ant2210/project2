@@ -6,7 +6,7 @@ There are three levels of difficulty, easy questions score 10 points, medium que
 
 [View the live project here.](https://ant2210.github.io/project2/)
 
-<img src="./assets/images/websitemockup.webp" alt="Image of Gamer Quiz Champion website on different devices" style="border-radius: 12px;">
+<img src="./assets/images/websitemockup.webp" alt="Image of Gamer Quiz Champion website on different devices"">
 
 ## User Experience (UX) 
 
@@ -31,19 +31,22 @@ There are three levels of difficulty, easy questions score 10 points, medium que
 
 ### Design
 #### Colour Scheme
-The main considerations for the colour scheme were aesthetics and accessibility. As this is a video game quiz I decided to go for a retro theme and the blue colour chosen is reminiscent of the rolling sky backgrounds found in a lot of retro games, which is then further complemented by the background image chosen.<br>
-When choosing the main text colour, I wanted a dark contrasting colour but didn't want to use black `#ffffff` as I found this to be quite harsh, so opted for a slightly softened black/grey colour.<br>
-I then used a colour picker to select a backup background colour the same colour as the sky in the background image. This however doesn't effect accessibility in any way as all text is overlaid within a "container" which is the main blue colour.<br>
+The main considerations for the colour scheme were aesthetics and accessibility. As this is a video game quiz I decided to go for a retro theme and the blue colour chosen is reminiscent of the rolling sky backgrounds found in a lot of retro games, which is then further complemented by the background image chosen.
+
+When choosing the main text colour, I wanted a dark contrasting colour but didn't want to use black `#ffffff` as I found this to be quite harsh, so opted for a slightly softened black/grey colour.
+
+I then used a colour picker to select a backup background colour the same colour as the sky in the background image. This however doesn't effect accessibility in any way as all text is overlaid within a "container" which is the main blue colour.
+
 When Selecting the button colours I wanted something basic but vibrant that still sticks with the retro them but contrasts well against the blue colour. During the main quiz the buttons flash green for correct answers and red for incorrect answers which are fairly intuitive colours for this purpose.
 
   -   ##### Colours Used
 
-        - Main colour theme - `#2290fd` <span style="background-color: #2290fd; border: 1px solid black">&nbsp;&nbsp;&nbsp;&nbsp;</span>
-        - Text colour - `#161616` <span style="background-color: #161616; border: 1px solid black">&nbsp;&nbsp;&nbsp;&nbsp;</span>
-        - Backup background colour - `#65D3F0` <span style="background-color: #65D3F0; border: 1px solid black">&nbsp;&nbsp;&nbsp;&nbsp;</span>
-        - Button colour - `#ffdf29` <span style="background-color: #ffdf29; border: 1px solid black">&nbsp;&nbsp;&nbsp;&nbsp;</span>
-        - Correct answer button colour - `#008000` <span style="background-color: #008000; border: 1px solid black">&nbsp;&nbsp;&nbsp;&nbsp;</span>
-        - Incorrect answer button colour - `#ff0000` <span style="background-color: #ff0000; border: 1px solid black">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        - Main colour theme - `#2290fd`
+        - Text colour - `#161616`
+        - Backup background colour - `#65D3F0`
+        - Button colour - `#ffdf29`
+        - Correct answer button colour - `#008000`
+        - Incorrect answer button colour - `#ff0000`
 
 #### Colour Accessibility
 			
