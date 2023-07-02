@@ -6,7 +6,7 @@ There are three levels of difficulty, easy questions score 10 points, medium que
 
 [View the live project here.](https://ant2210.github.io/project2/)
 
-<img src="./assets/images/websitemockup.webp" alt="Image of Gamer Quiz Champion website on different devices"">
+<img src="./assets/images/websitemockup.webp" alt="Image of Gamer Quiz Champion website on different devices">
 
 ## User Experience (UX) 
 
@@ -45,7 +45,7 @@ When Selecting the button colours I wanted something basic but vibrant that stil
         - Text colour - `#161616`
         - Backup background colour - `#65D3F0`
         - Button colour - `#ffdf29`
-        - Correct answer button colour - `#008000`
+        - Correct answer button colour - `#009D00`
         - Incorrect answer button colour - `#ff0000`
 
 #### Colour Accessibility
