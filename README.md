@@ -99,6 +99,8 @@ The wireframes were creates using [Figma](https://www.figma.com/files/recents-an
 
 <img src="./assets/images/wireframes.webp" alt="Website wireframes">
 
+[Back to top](#title)  
+
 ### Features
 
 -   Fully responsive across all screen sizes.
@@ -132,7 +134,6 @@ The wireframes were creates using [Figma](https://www.figma.com/files/recents-an
 
 
 [Back to top](#title)  
-[Back to contents](#contents)
 
 ## Technologies Used
 
@@ -164,7 +165,6 @@ sections of the website which were then edited myself inside of GitPod
 
 
 [Back to top](#title)  
-[Back to contents](#contents)
 
 ## Testing
 
@@ -212,6 +212,16 @@ Extensive testing was carried out throughout the life cycle of this project. As 
 
     <img src="./assets/testing/images/warning3.webp" alt="Screenshot of dev tools console warning">
 
+-   Warning 4 & 5: Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'interest-cohort'.<br>
+
+    This was an error I encountered on my previous project which after some research it seems this tells google whether or not you would opt into FLoC and can be safely ignored for the purposes of this project.
+
+    Uncaught TypeError: Cannot read properties of null (reading 'map') at highscores.js:10:29<br>
+
+    This is an error that only occurs when there are no high scores currently saved to local storage as the code that gets the high scores cannot be run if the key value doesn't exist in local storage, so this has also been ignored.
+
+    <img src="./assets/testing/images/warning4.webp" alt="Screenshot of dev tools console warning">
+
 No further issues found in the Dev Tools Console.
 
 <img src="./assets/testing/images/nowarnings.webp" alt="Screenshot of dev tools console with no warnings">
@@ -253,7 +263,7 @@ The site has altogether in one way or another been used and tested on the follow
             <img src="./assets/testing/images/tabletscreenshot.webp" alt="Website home screen tablet display screenshot">
             <img src="./assets/testing/images/tabletgameplayscreenshot.webp" alt="Website game play tablet display screenshot">
             <img src="./assets/testing/images/tablethowtoscreenshot.webp" alt="Website how to modal tablet display screenshot">
-            
+
             -   Mobile
             <img src="./assets/testing/images/phonescreenshot.webp" alt="Website home screen phone display screenshot">
             <img src="./assets/testing/images/phonegameplayscreenshot.webp" alt="Website game play phone display screenshot">
@@ -342,6 +352,8 @@ The site has altogether in one way or another been used and tested on the follow
 
 <img src="./assets/testing/images/lighthousemobile.webp" alt="Lighthouse mobile results">
 
+[Back to top](#title)  
+
 ## Deployment
 
 ### GitHub Pages
@@ -388,13 +400,12 @@ By forking the GitHub Repository we make a copy of the original repository on ou
 8. Press Enter. Your local clone should be created
 
 [Back to top](#title)  
-[Back to contents](#contents)
 
 ## Credits
 
 ### Code
 
--   
+-   REMOVE CONTENTS
 -   
 -   
 
@@ -421,4 +432,3 @@ I 100% couldn't have completed this project on my own so would like to acknowled
 -
 
 [Back to top](#title)  
-[Back to contents](#contents)
