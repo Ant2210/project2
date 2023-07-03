@@ -25,7 +25,7 @@ Advice found here for checking the value of an input field -> https://stackoverf
 
 Function that disables the default function of a button, ensures the input
 field hasn't been left blank. If a valid name is input this then saves the score
-and username as an object, add it to the highscores array, and reorders from 
+and username as an object, add it to the highScores array, and reorders from 
 highest to lowest and converts it to a string for storage in the local storage.
 
 Then calls the redirectToGame function. */

@@ -173,6 +173,10 @@ The wireframes were creates using [Figma](https://www.figma.com/files/recents-an
 
     <img src="./assets/testing/images/footer.webp" alt="Website footer screenshot">
 
+-   A 404.html error page that automatically redirects users back to the homepage if a page cannot be found.
+
+    <img src="./assets/testing/images/404screenshot.webp" alt="Website 404 page screenshot">
+
 ### Future Features
 
 -   I would like to implement a social share button so that users can share their scores with their friends on social media.
@@ -361,6 +365,10 @@ The site has altogether in one way or another been used and tested on the follow
 
 <img src="./assets/testing/images/htmlend.webp" alt="w3 HTML validator screenshot of end.html results">
 
+- ##### 404 Error Page
+
+<img src="./assets/testing/images/html404.webp" alt="w3 HTML validator screenshot of 404.html results">
+
 #### CSS Validator - [W3C](https://jigsaw.w3.org/css-validator/)
 
 - ##### styles.css
@@ -396,6 +404,10 @@ The site has altogether in one way or another been used and tested on the follow
 - ##### highscores.js
 
 <img src="./assets/testing/images/jshinthighscores.webp" alt="JSHint validator screenshot of highscores.js results">
+
+- ##### 404 Error Page
+
+<img src="./assets/testing/images/jshint404.webp" alt="JSHint validator screenshot of 404.js results">
 
 #### Lighthouse
 
