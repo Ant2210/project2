@@ -192,7 +192,7 @@ Extensive testing was carried out throughout the life cycle of this project. As 
 
 -   Warning 1: ARIA hidden element must not contain focusable elements.<br>
 
-    This pertains to the bootstrap modals. As is argued a GitHub post that can be found [here](https://github.com/twbs/bootstrap/issues/29769. There is no adverse effect to removing the aria-hidden attribute and is in line with accessibility guidelines so I have removed it from my modals.
+    This pertains to the bootstrap modals. As is argued a GitHub post that can be found [here](https://github.com/twbs/bootstrap/issues/29769). There is no adverse effect to removing the aria-hidden attribute and is in line with accessibility guidelines so I have removed it from my modals.
 
     <img src="./assets/testing/images/warning1.webp" alt="Screenshot of dev tools console warning">
 
