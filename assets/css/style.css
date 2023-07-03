@@ -149,48 +149,6 @@ footer ul {
     margin-bottom: 10px;
 }
 
-/* Scroll Bar Styling */
-::-webkit-scrollbar {
-    width: 25px;
-    height: 25px;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #2290fd;
-    border: 4px inset #333333;
-}
-
-::-webkit-scrollbar-track {
-    background: #2290fd;
-}
-
-::-webkit-scrollbar-button:single-button {
-    background-color: #2290fd;
-    display: block;
-    border-style: solid;
-    height: 20px;
-}
-
-/* Scroll Bar Up Button - Advice on styling scroll bar buttons found here -> https://stackoverflow.com/questions/47576815/how-to-add-arrows-with-webkit-scrollbar-button*/
-::-webkit-scrollbar-button:single-button:vertical:decrement {
-    border-width: 0px 12px 12px 12px;
-    border-color: transparent transparent #333333 transparent;
-}
-
-::-webkit-scrollbar-button:single-button:vertical:decrement:hover {
-    border-color: transparent transparent #777777 transparent;
-}
-
-/* Scroll Bar Down Button */
-::-webkit-scrollbar-button:single-button:vertical:increment {
-    border-width: 12px 12px 0 12px;
-    border-color: #333333 transparent transparent transparent;
-}
-
-::-webkit-scrollbar-button:single-button:vertical:increment:hover {
-    border-color: #777777 transparent transparent transparent;
-}
-
 /* Media Queries */
 @media screen and (max-width: 768px) {
     body {

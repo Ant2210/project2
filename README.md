@@ -188,7 +188,7 @@ Extensive testing was carried out throughout the life cycle of this project. As 
 
 -   Bug 6: When there are no saved scores a default message is saved on the leader board which was originally incorrectly placed inside the `<ol>` tags. When I moved this text outside of the `<ol>` tags it was no longer being replaced by the high scores list but appearing above it. I altered the code slightly so that the content of the whole model body was replaced by the new list which solved this issue.
 
-### Console Warnings
+### Console Warnings & Errors
 
 -   Warning 1: ARIA hidden element must not contain focusable elements.<br>
 
@@ -220,7 +220,7 @@ Extensive testing was carried out throughout the life cycle of this project. As 
 
     Uncaught TypeError: Cannot read properties of null (reading 'map') at highscores.js:10:29.<br>
 
-    This is an error that only occurs when there are no high scores currently saved to local storage as the code that gets the high scores cannot be run if the key value doesn't exist in local storage, so this has also been ignored.
+    This is an error that only occurs when there are no high scores currently saved to local storage and the highScores array is empty. I fixed this by initialising an empty array if there is no highScores array to parse from the local storage.
 
     <img src="./assets/testing/images/warning4.webp" alt="Screenshot of dev tools console warning">
 
