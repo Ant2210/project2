@@ -253,6 +253,7 @@ The site has altogether in one way or another been used and tested on the follow
             <img src="./assets/testing/images/tabletscreenshot.webp" alt="Website home screen tablet display screenshot">
             <img src="./assets/testing/images/tabletgameplayscreenshot.webp" alt="Website game play tablet display screenshot">
             <img src="./assets/testing/images/tablethowtoscreenshot.webp" alt="Website how to modal tablet display screenshot">
+            
             -   Mobile
             <img src="./assets/testing/images/phonescreenshot.webp" alt="Website home screen phone display screenshot">
             <img src="./assets/testing/images/phonegameplayscreenshot.webp" alt="Website game play phone display screenshot">
@@ -281,23 +282,23 @@ The site has altogether in one way or another been used and tested on the follow
 
 #### HTML Validator - [W3C](https://validator.w3.org/)
 
-- Homepage
+- ##### Homepage
 
 <img src="./assets/testing/images/htmlindex.webp" alt="w3 HTML validator screenshot of index.html results">
 
-- Quiz Page
+- ##### Quiz Page
 
     - Warning - There is a warning as there is an empty `<h2>` element on the page, I have ignored this however as the `<h2>` is for the question field which is programmatically completed using javaScript.
 
 <img src="./assets/testing/images/htmlquiz.webp" alt="w3 HTML validator screenshot of quiz.html results">
 
-- End Page
+- ##### End Page
 
 <img src="./assets/testing/images/htmlend.webp" alt="w3 HTML validator screenshot of end.html results">
 
 #### CSS Validator - [W3C](https://jigsaw.w3.org/css-validator/)
 
-- styles.css
+- ##### styles.css
 
     - Warning - TBD
 
@@ -305,81 +306,41 @@ The site has altogether in one way or another been used and tested on the follow
 
 <img src="./assets/testing/images/cssstyles2.webp" alt="w3 css validator screenshot of styles.css results">
 
-- quiz.css
+- ##### quiz.css
 
 <img src="./assets/testing/images/cssquiz.webp" alt="w3 HTML validator screenshot of quiz.css results">
 
-- end.css
+- ##### end.css
 
 <img src="./assets/testing/images/cssend.webp" alt="w3 HTML validator screenshot of end.css results">
 
 #### JSHint Validator - [W3C](https://jshint.com/)
-1.   Homepage
 
-[Homepage HTML Validator Test 1](www.google.com)
+- ##### quiz.js
 
-[Homepage HTML Validator Test 2](www.google.com)
+    - Warning - TBD
 
--   Issue 1
--   Issue 2
+<img src="./assets/testing/images/jshintquiz.webp" alt="JSHint validator screenshot of quiz.js results">
 
+- ##### end.js
 
-2.   Quiz Page
+    - Warning - TBD
 
-[Portfolio Page HTML Validator Test 1](www.google.com)
+<img src="./assets/testing/images/jshintend.webp" alt="JSHint validator screenshot of end.js results">
 
-[Portfolio Page HTML Validator Test 2](www.google.com)
+- ##### highscores.js
 
--   Issue 1
--   Issue 2
-
-<br>
+<img src="./assets/testing/images/jshinthighscores.webp" alt="JSHint validator screenshot of highscores.js results">
 
 #### Lighthouse
-1.   Homepage
 
-[Homepage HTML Validator Test 1](www.google.com)
+- ##### Desktop
 
-[Homepage HTML Validator Test 2](www.google.com)
+<img src="./assets/testing/images/lighthousedesktop.webp" alt="Lighthouse desktop results">
 
--   Issue 1
--   Issue 2
+- ##### Mobile
 
-
-2.   Quiz Page
-
-[Portfolio Page HTML Validator Test 1](www.google.com)
-
-[Portfolio Page HTML Validator Test 2](www.google.com)
-
--   Issue 1
--   Issue 2
-
-<br>
-
-#### Browser Errors
-1.   Homepage
-
-[Homepage HTML Validator Test 1](www.google.com)
-
-[Homepage HTML Validator Test 2](www.google.com)
-
--   Issue 1
--   Issue 2
-
-
-2.   Quiz Page
-
-[Portfolio Page HTML Validator Test 1](www.google.com)
-
-[Portfolio Page HTML Validator Test 2](www.google.com)
-
--   Issue 1
--   Issue 2
-
-
-[Back to top](#title)  
-[Back to contents](#contents)
+<img src="./assets/testing/images/lighthousemobile.webp" alt="Lighthouse mobile results">
 
 ## Deployment
 
