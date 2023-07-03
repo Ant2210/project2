@@ -229,7 +229,12 @@ The wireframes were creates using [Figma](https://www.figma.com/files/recents-an
 
 ### Manual Testing
 
-Extensive testing was carried out throughout the life cycle of this project. As well as all of the documented testing below I asked friends and family to use the site and tell me what was and wasn't working. 
+Extensive testing was carried out throughout the life cycle of this project. As well as all of the documented testing below I asked friends and family to use the site and tell me what was and wasn't working. I worked through the game click and checking each feature and function by one and looked for anything that wasn't working or that was logging an error in the console. 
+
+Had I given myself more time I would have liked to have implemented some automated testing using Jest and is certainly something I will look to implement in future projects. 
+
+In practice and for production code a combination of both manual and automated testing is important. Automated testing can provide fast results especially across large applications whilst manual testing adds the human element and is more adept at spotting things like intuitiveness of the design. Utilising both can ensure high levels of quality and reliability of web applications.
+
 
 ### Bugs
 
@@ -387,7 +392,7 @@ The site has altogether in one way or another been used and tested on the follow
 
 <img src="./assets/testing/images/cssend.webp" alt="w3 HTML validator screenshot of end.css results">
 
-#### JSHint Validator - [W3C](https://jshint.com/)
+#### JSHint Validator - [JSHint](https://jshint.com/)
 
 - ##### quiz.js
 
