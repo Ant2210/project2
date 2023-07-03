@@ -101,7 +101,7 @@ The wireframes were creates using [Figma](https://www.figma.com/files/recents-an
 
 ### Features
 
--   Full responsive across all screen sizes
+-   Fully responsive across all screen sizes.
 -   Intuitive and easy to navigate either using the various buttons throughout the page.
 -   A "How To Play" section detailing the purpose of the quiz as well as how to play.
 -   A Leader Board which saves the users score to the local storage allowing them to keep track of their high scores.
@@ -186,6 +186,38 @@ Extensive testing was carried out throughout the life cycle of this project. As 
 
 -   Bug 6: When there are no saved scores a default message is saved on the leader board which was originally incorrectly placed inside the `<ol>` tags. When I moved this text outside of the `<ol>` tags it was no longer being replaced by the high scores list but appearing above it. I altered the code slightly so that the content of the whole model body was replaced by the new list which solved this issue.
 
+### Console Warnings
+
+-   Warning 1: ARIA hidden element must not contain focusable elements<br>
+
+    This pertains to the bootstrap modals. As is argued a GitHub post that can be found [here](https://github.com/twbs/bootstrap/issues/29769. There is no adverse effect to removing the aria-hidden attribute and is in line with accessibility guidelines so I have removed it from my modals.
+
+    <img src="./assets/testing/images/warning1.webp" alt="Screenshot of dev tools console warning">
+
+-   Warning 2: Links must have discernible text: Element has no title attribute<br>
+
+    This is in reference to the choices and difficulty buttons which are `<a>` tags styled as buttons, and the “invisible” links used to launch the quit modal and error message modal. 
+    
+    I was using `<a>` tags with no inner text so they would not be visible and referencing them in the javaScript code to launch the modals. 
+
+    To rectify this the choice buttons were given Aria labels as they are empty until filled in by the API. The “invisible” links were removed altogether as there is no reason for a user to need to manually open the error modal and the quit link was redundant as there is a visible button to use. I found a better method to launch them using only javaScript found [here](https://stackoverflow.com/questions/62827002/bootstrap-v5-manually-call-a-modal-mymodal-show-not-working-vanilla-javascrip). 
+    
+    This also led me to a bug with the error handling for the API. See bug 5.
+
+    <img src="./assets/testing/images/warning2.webp" alt="Screenshot of dev tools console warning">
+
+-   Warning 3: Links must have discernible text: Element has no title attribute<br>
+
+    This is Same issue as warning 2 with the “invisible” links used to launch the modals, rectified as per warning 2.
+
+    <img src="./assets/testing/images/warning3.webp" alt="Screenshot of dev tools console warning">
+
+No further issues found in the Dev Tools Console.
+
+<img src="./assets/testing/images/nowarnings.webp" alt="Screenshot of dev tools console with no warnings">
+
+
+### Devices Used For Testing
 
 The site has altogether in one way or another been used and tested on the following devices...
 
@@ -246,51 +278,40 @@ The site has altogether in one way or another been used and tested on the follow
         -   This could be accomplished by implementing some of the [Future Features](#future-features) mentioned above such as adding a social share button and public leader board, which I hope are features I can work on at the end of the course.
 
 ### Further Testing
-<br>
 
 #### HTML Validator - [W3C](https://validator.w3.org/)
-1.   Homepage
 
-[Homepage HTML Validator Test 1](www.google.com)
+- Homepage
 
-[Homepage HTML Validator Test 2](www.google.com)
+<img src="./assets/testing/images/htmlindex.webp" alt="w3 HTML validator screenshot of index.html results">
 
--   Issue 1
--   Issue 2
+- Quiz Page
 
+    - Warning - There is a warning as there is an empty `<h2>` element on the page, I have ignored this however as the `<h2>` is for the question field which is programmatically completed using javaScript.
 
-2.   Quiz Page
+<img src="./assets/testing/images/htmlquiz.webp" alt="w3 HTML validator screenshot of quiz.html results">
 
-[Portfolio Page HTML Validator Test 1](www.google.com)
+- End Page
 
-[Portfolio Page HTML Validator Test 2](www.google.com)
-
--   Issue 1
--   Issue 2
-
-<br>
+<img src="./assets/testing/images/htmlend.webp" alt="w3 HTML validator screenshot of end.html results">
 
 #### CSS Validator - [W3C](https://jigsaw.w3.org/css-validator/)
-1.   Homepage
 
-[Homepage HTML Validator Test 1](www.google.com)
+- styles.css
 
-[Homepage HTML Validator Test 2](www.google.com)
+    - Warning - TBD
 
--   Issue 1
--   Issue 2
+<img src="./assets/testing/images/cssstyles.webp" alt="w3 css validator screenshot of styles.css results">
 
+<img src="./assets/testing/images/cssstyles2.webp" alt="w3 css validator screenshot of styles.css results">
 
-2.   Quiz Page
+- quiz.css
 
-[Portfolio Page HTML Validator Test 1](www.google.com)
+<img src="./assets/testing/images/cssquiz.webp" alt="w3 HTML validator screenshot of quiz.css results">
 
-[Portfolio Page HTML Validator Test 2](www.google.com)
+- end.css
 
--   Issue 1
--   Issue 2
-
-<br>
+<img src="./assets/testing/images/cssend.webp" alt="w3 HTML validator screenshot of end.css results">
 
 #### JSHint Validator - [W3C](https://jshint.com/)
 1.   Homepage
