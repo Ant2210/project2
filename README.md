@@ -470,7 +470,6 @@ By forking the GitHub Repository we make a copy of the original repository on ou
 ### Code
 
 -   Social Media Integration for Facebook, LinkedIn & Google - Code from [Abi Harrison Meta Tags Webinar](https://www.youtube.com/watch?v=t-4qqmikIqk).
--   Scroll Bar Up Button - Advice on styling scroll bar buttons found on Stack Overflow [here](https://stackoverflow.com/questions/47576815/how-to-add-arrows-with-webkit-scrollbar-button).
 -   Tutorial for saving high scores to the local storage by James Q Quick found [here](https://www.youtube.com/watch?v=DFhmNLKwwGw).
 -   Advice for checking the value of an input field using javaScript for on Stack Overflow [here](https://stackoverflow.com/questions/3937513/javascript-validation-for-empty-input-field).
 -   I found the code used to randomize an array in this [Sling Academy Article](https://www.slingacademy.com/article/;ways-to-shuffle-an-array-in-javascript/?utm_content=cmp-true.).
