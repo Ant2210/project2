@@ -107,18 +107,71 @@ The wireframes were creates using [Figma](https://www.figma.com/files/recents-an
 ### Features
 
 -   Fully responsive across all screen sizes.
+
+    -   Laptop / Desktop
+    <img src="./assets/testing/images/laptopscreenshot.webp" alt="Website home screen laptop display screenshot">
+    <img src="./assets/testing/images/laptopgameplayscreenshot.webp" alt="Website game play laptop display screenshot">
+    <img src="./assets/testing/images/laptophowtoscreenshot.webp" alt="Website how to modal laptop display screenshot">
+
+    -   Tablet
+    <img src="./assets/testing/images/tabletscreenshot.webp" alt="Website home screen tablet display screenshot">
+    <img src="./assets/testing/images/tabletgameplayscreenshot.webp" alt="Website game play tablet display screenshot">
+    <img src="./assets/testing/images/tablethowtoscreenshot.webp" alt="Website how to modal tablet display screenshot">
+
+    -   Mobile
+    <img src="./assets/testing/images/phonescreenshot.webp" alt="Website home screen phone display screenshot">
+    <img src="./assets/testing/images/phonegameplayscreenshot.webp" alt="Website game play phone display screenshot">
+    <img src="./assets/testing/images/phonehowtoscreenshot.webp" alt="Website how to modal phone display screenshot">
+
 -   Intuitive and easy to navigate using the various buttons throughout the page.
+
+    <img src="./assets/testing/images/gameplaybuttons1.webp" alt="Website gameplay buttons screenshot">
+    <img src="./assets/testing/images/gameplaybuttons2.webp" alt="Website gameplay buttons screenshot">
+    <img src="./assets/testing/images/gameplaybuttons3.webp" alt="Website gameplay buttons screenshot">
+    <img src="./assets/testing/images/gameplaybuttons4.webp" alt="Website gameplay buttons screenshot">
+
 -   A "How To Play" section detailing the purpose of the quiz as well as how to play.
+
+    <img src="./assets/testing/images/howtoplayscreenshot.webp" alt="Website how to play modal screenshot">
 -   A Leader Board which saves the users score to the local storage allowing them to keep track of their high scores.
--   A Heads Up Display which shows the user which question they are on and how many they have left as well as their current score. 
+
+    <img src="./assets/testing/images/leaderboardnoscoresscreenshot.webp" alt="Website leader board with no scores modal screenshot">
+    <img src="./assets/testing/images/leaderboardwithscoresscreenshot.webp" alt="Website leader board with scores modal screenshot">
+
+-   A Heads Up Display which shows the user which question they are on and how many they have left as well as their current score.
+
+    <img src="./assets/testing/images/hudscreenshot.webp" alt="Website HUD screenshot">
 -   A difficulty selector allowing the user to select three levels of difficulty for the quiz.
+    <img src="./assets/testing/images/difficultyscreenshot.webp" alt="Website leader board with scores modal screenshot">
+
 -   A quit button, allowing the user to quit the quiz and go back home at any point. This is also connected to a warning modal informing the user that their progress will not be saved if they choose to quit the quiz.
+
+    <img src="./assets/testing/images/quitbutton.webp" alt="Website quit button screenshot">
+    <img src="./assets/testing/images/quitmodal.webp" alt="Website quit modal screenshot">
+
 -   A "Skip & Go Home" button allowing the user to skip saving their high score if they don't want to. 
+
+    <img src="./assets/testing/images/savebutton.webp" alt="Website save button screenshot">
+
 -   All questions are loaded at random from an external API, allowing for a large amount of questions without have them be saved locally to the site. 
--   A loading screen which is shown whilst questions are being retrieved from the external API so the user isn't staring a blank page, or page with placeholder text. 
+
+    <img src="./assets/testing/images/gameplayscreenshot.webp" alt="Website game play screenshot">
+
+-   A loading screen which is shown whilst questions are being retrieved from the external API so the user isn't staring a blank page, or page with placeholder text.
+
+    <img src="./assets/testing/images/loadingscreenshot.webp" alt="Website loading screenshot">
+
 -   An error modal which informs the user if there has been an issues whilst retrieving the questions from the external API.
+
+    <img src="./assets/testing/images/errorscreenshot.webp" alt="Website error modal screenshot">
+
 -   Another error modal that appears if the user tries to save their score without entering any text into the username field.
+
+    <img src="./assets/testing/images/whoopsscreenshot.webp" alt="Website missing username modal screenshot">
+
 -   A responsive footer with a link to the creators GitHub account.
+
+    <img src="./assets/testing/images/footer.webp" alt="Website footer screenshot">
 
 ### Future Features
 
@@ -312,7 +365,7 @@ The site has altogether in one way or another been used and tested on the follow
 
 - ##### styles.css
 
-    - Warning - TBD
+    - Warnings - Warnings ignored as they only pertain to the imported fonts from Google Fonts.
 
 <img src="./assets/testing/images/cssstyles.webp" alt="w3 css validator screenshot of styles.css results">
 
@@ -330,13 +383,13 @@ The site has altogether in one way or another been used and tested on the follow
 
 - ##### quiz.js
 
-    - Warning - TBD
+    - Warning - One of the fixes I used to solve "Warning 2" in [Console Warnings & Errors](#console-warnings--errors) was to call some of the modals using javaScript only, [this](https://stackoverflow.com/questions/62827002/bootstrap-v5-manually-call-a-modal-mymodal-show-not-working-vanilla-javascrip) was the only method I could find but this now shows "bootstrap" is an undefined variable in jshint. The fix itself works and it causes no further errors, and doesn't effect usability.
 
 <img src="./assets/testing/images/jshintquiz.webp" alt="JSHint validator screenshot of quiz.js results">
 
 - ##### end.js
 
-    - Warning - TBD
+    - Warning - One of the fixes I used to solve "Warning 2" in [Console Warnings & Errors](#console-warnings--errors) was to call some of the modals using javaScript only, [this](https://stackoverflow.com/questions/62827002/bootstrap-v5-manually-call-a-modal-mymodal-show-not-working-vanilla-javascrip) was the only method I could find but this now shows "bootstrap" is an undefined variable in jshint. The fix itself works and it causes no further errors, and doesn't effect usability.
 
 <img src="./assets/testing/images/jshintend.webp" alt="JSHint validator screenshot of end.js results">
 
