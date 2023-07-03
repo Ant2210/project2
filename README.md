@@ -53,17 +53,20 @@ When deciding on the shade of blue and black to use, I used Coolors.co contract 
 
 I also checked the contract for the text against each button colour used. <br>
 
-For further information on these guidelines, you can visit the following link. [Web Content Accessibility Guidelines (WCAG) 2.1 (w3.org)](https://www.w3.org/TR/WCAG21/)
+For further information on these guidelines, you can visit the following link. [Web Content Accessibility Guidelines (WCAG) 2.1 (w3.org)](https://www.w3.org/TR/WCAG21/).
         
 
 - ##### Colour Palette and Results
-    - Main Colour Theme - [Coolors Contrast Checker](https://coolors.co/contrast-checker/161616-2290fd)
+    - Main Colour Theme - [Coolors Contrast Checker](https://coolors.co/contrast-checker/161616-2290fd)<br>
     <img src="./assets/testing/images/contrast1.webp" alt="Contrast check of text against main colour theme background">
-    - Main Button Colour - [Coolors Contrast Checker](https://coolors.co/contrast-checker/161616-ffdf29)
+
+    - Main Button Colour - [Coolors Contrast Checker](https://coolors.co/contrast-checker/161616-ffdf29)<br>
     <img src="./assets/testing/images/contrast2.webp" alt="Contrast check of text against main button colour">
-    - Correct Button Colour - [Coolors Contrast Checker](https://coolors.co/contrast-checker/161616-009D00)
+
+    - Correct Button Colour - [Coolors Contrast Checker](https://coolors.co/contrast-checker/161616-009D00)<br>
     <img src="./assets/testing/images/contrast3.webp" alt="Contrast check of text against correct button colour">
-    - Incorrect Button Theme - [Coolors Contrast Checker](https://coolors.co/contrast-checker/161616-ff0000)
+
+    - Incorrect Button Theme - [Coolors Contrast Checker](https://coolors.co/contrast-checker/161616-ff0000)<br>
     <img src="./assets/testing/images/contrast4.webp" alt="Contrast check of text against incorrect button colour">     
 
 
@@ -95,7 +98,7 @@ All other imagery on the website are basic emojis and inserted using the HTML Em
 
 
 ### Wireframes
-The wireframes were creates using [Figma](https://www.figma.com/files/recents-and-sharing?fuid=1196127801458429486)
+The wireframes were creates using [Figma](https://www.figma.com/files/recents-and-sharing?fuid=1196127801458429486).
 
 <img src="./assets/images/wireframes.webp" alt="Website wireframes">
 
@@ -104,7 +107,7 @@ The wireframes were creates using [Figma](https://www.figma.com/files/recents-an
 ### Features
 
 -   Fully responsive across all screen sizes.
--   Intuitive and easy to navigate either using the various buttons throughout the page.
+-   Intuitive and easy to navigate using the various buttons throughout the page.
 -   A "How To Play" section detailing the purpose of the quiz as well as how to play.
 -   A Leader Board which saves the users score to the local storage allowing them to keep track of their high scores.
 -   A Heads Up Display which shows the user which question they are on and how many they have left as well as their current score. 
@@ -124,12 +127,12 @@ The wireframes were creates using [Figma](https://www.figma.com/files/recents-an
 -   I would like to implement either a database that holds the high scores or use an external API to with social features so that the users high scores can be made public and shared with friends via social media. 
 
 ### Accessibility
--   The use of semantic HTML
--   Ensuring the colours and text use meet accessibility standards set by [w3.org](https://www.w3.org/TR/WCAG21/)
--   Ensuring all clickable buttons and links are tabbable using the keyboard
--   Using descriptive alt tags on all images
--   Using correct aria labels where necessary
--   Being mindful in the creation of the design to ensure it is intuitive and as easy to navigate as possible
+-   The use of semantic HTML.
+-   Ensuring the colours and text use meet accessibility standards set by [w3.org](https://www.w3.org/TR/WCAG21/).
+-   Ensuring all clickable buttons and links are tabbable using the keyboard.
+-   Using descriptive alt tags on all images.
+-   Using correct aria labels where necessary.
+-   Being mindful in the creation of the design to ensure it is intuitive and as easy to navigate as possible.
 
 
 
@@ -144,23 +147,22 @@ The wireframes were creates using [Figma](https://www.figma.com/files/recents-an
 
 ### Frameworks, Libraries & Programs Used
 
--   [Bootstrap](https://getbootstrap.com/) Version 5.3.0 - For the layout and framework of the website, it was also used to create the various modals which were then restyled to math the rest of the website
--   [Can I Use](https://caniuse.com/) - To check browser support for website features
--   [Cloud Convert](https://cloudconvert.com/) - To compress and convert images to webp
--   [Coolors](https://coolors.co/) - To check contrast and accessibility of the colours I chose to use
--   [Figma](https://www.figma.com/) - To create the wireframes 
--   [Font Awesome](https://fontawesome.com/) - Used for the GitHub icon used in the footer button
--   [Git](https://git-scm.com/) - For version control
--   [GitHub](https://github.com/) - To store website files and repository for the website
--   [Visual Studio Code](https://code.visualstudio.com/) - Was used as my code editor to write code, version control using git and pushing changes for storage to GitHub
+-   [Bootstrap](https://getbootstrap.com/) Version 5.3.0 - For the layout and framework of the website, it was also used to create the various modals which were then restyled to math the rest of the website.
+-   [Can I Use](https://caniuse.com/) - To check browser support for website features.
+-   [Cloud Convert](https://cloudconvert.com/) - To compress and convert images to webp.
+-   [Coolors](https://coolors.co/) - To check contrast and accessibility of the colours I chose to use.
+-   [Figma](https://www.figma.com/) - To create the wireframes.
+-   [Font Awesome](https://fontawesome.com/) - Used for the GitHub icon used in the footer button.
+-   [Git](https://git-scm.com/) - For version control.
+-   [GitHub](https://github.com/) - To store website files and repository for the website.
+-   [Visual Studio Code](https://code.visualstudio.com/) - Was used as my code editor to write code, version control using git and pushing changes for storage to GitHub.
 -   [Google Fonts](https://fonts.google.com/) - To import the fonts I chose for the website
--   Google Dev Tools - Built into the chrome browser to test features and design and troubleshoot as I went along as well as for testing later on
-sections of the website which were then edited myself inside of GitPod
--   [Am I Responsive](https://amiresponsive.co.uk/) - To create the website mockup images at the top of the README
+-   Google Dev Tools - Built into the chrome browser to test features and design and troubleshoot as I went along as well as for testing later on, these sections of the website which were then edited myself inside of Visual Stdio Code.
+-   [Am I Responsive](https://amiresponsive.co.uk/) - To create the website mockup images at the top of the README.
 -   [Pixlr](https://pixlr.com/e/) - To edit images such as the favicon and website mockup.
--   Lighthouse - Built into Google Dev Tools for testing
--   [W3C](https://www.w3.org/) - To validate and test HTML and CSS code
--   [JSHint](https://jshint.com/) - To validate and text javaScript code
+-   Lighthouse - Built into Google Dev Tools for testing.
+-   [W3C](https://www.w3.org/) - To validate and test HTML and CSS code.
+-   [JSHint](https://jshint.com/) - To validate and text javaScript code.
 -   [Open Trivia Database](https://opentdb.com/) - Is the external API used to retrieve the questions for the quiz.
 
 
@@ -188,13 +190,13 @@ Extensive testing was carried out throughout the life cycle of this project. As 
 
 ### Console Warnings
 
--   Warning 1: ARIA hidden element must not contain focusable elements<br>
+-   Warning 1: ARIA hidden element must not contain focusable elements.<br>
 
     This pertains to the bootstrap modals. As is argued a GitHub post that can be found [here](https://github.com/twbs/bootstrap/issues/29769. There is no adverse effect to removing the aria-hidden attribute and is in line with accessibility guidelines so I have removed it from my modals.
 
     <img src="./assets/testing/images/warning1.webp" alt="Screenshot of dev tools console warning">
 
--   Warning 2: Links must have discernible text: Element has no title attribute<br>
+-   Warning 2: Links must have discernible text: Element has no title attribute.<br>
 
     This is in reference to the choices and difficulty buttons which are `<a>` tags styled as buttons, and the “invisible” links used to launch the quit modal and error message modal. 
     
@@ -206,7 +208,7 @@ Extensive testing was carried out throughout the life cycle of this project. As 
 
     <img src="./assets/testing/images/warning2.webp" alt="Screenshot of dev tools console warning">
 
--   Warning 3: Links must have discernible text: Element has no title attribute<br>
+-   Warning 3: Links must have discernible text: Element has no title attribute.<br>
 
     This is Same issue as warning 2 with the “invisible” links used to launch the modals, rectified as per warning 2.
 
@@ -216,7 +218,7 @@ Extensive testing was carried out throughout the life cycle of this project. As 
 
     This was an error I encountered on my previous project which after some research it seems this tells google whether or not you would opt into FLoC and can be safely ignored for the purposes of this project.
 
-    Uncaught TypeError: Cannot read properties of null (reading 'map') at highscores.js:10:29<br>
+    Uncaught TypeError: Cannot read properties of null (reading 'map') at highscores.js:10:29.<br>
 
     This is an error that only occurs when there are no high scores currently saved to local storage as the code that gets the high scores cannot be run if the key value doesn't exist in local storage, so this has also been ignored.
 
@@ -360,44 +362,41 @@ The site has altogether in one way or another been used and tested on the follow
 
 The project was deployed to GitHub Pages using the following steps...
 
-1. Log in to GitHub and locate the GitHub Repository
-2. At the top right hand corner of the screen click on your avatar and select 'Your repositories' from the dropdown menu
-3. Select the repository you would like to deploy from your list of repositories
-4. Near the top centre of the repository (not top of the page), locate and click the settings button on the menu
-5. Locate the 'Pages' option on the left hand menu of the settings page
-6. Ensure the 'Source' option says 'Deploy from a branch'
-7. Under Branch' change the 'None' option to 'main' then press the 'Save' button to the right
+1. Log in to GitHub and locate the GitHub Repository.
+2. At the top right hand corner of the screen click on your avatar and select 'Your repositories' from the dropdown menu.
+3. Select the repository you would like to deploy from your list of repositories.
+4. Near the top centre of the repository (not top of the page), locate and click the settings button on the menu.
+5. Locate the 'Pages' option on the left hand menu of the settings page.
+6. Ensure the 'Source' option says 'Deploy from a branch'.
+7. Under Branch' change the 'None' option to 'main' then press the 'Save' button to the right.
 8. Under branch it should now say "Your GitHub Pages site is currently being built from the main branch."
-9. Wait a few minutes for the page to refresh (this can take up to 5 minutes but usually only 2-3 minutes)
+9. Wait a few minutes for the page to refresh (this can take up to 5 minutes but usually only 2-3 minutes).
 10. You may have to refresh the page at this point, once completed at the top of the page you will see your site it live with the link to the live site. 
-11. If you are unsure and want to check the progress you can click on 'Code' along the top menu of the setting (not top of the screen)
-12. Under 'Environments' on the right hand side you will see github-pages
+11. If you are unsure and want to check the progress you can click on 'Code' along the top menu of the setting (not top of the screen).
+12. Under 'Environments' on the right hand side you will see github-pages.
 13. Clicking this link will tell you if your page is queue, in progress or active.
-
-4. Under "Source", click the dropdown called "None" and select "Master Branch".
-5. The page will automatically refresh.
-6. Scroll back down through the page to locate the now published site link in the "GitHub Pages" section.
+14. You will also find the link here to your deployed page or by going back to the 'Setting' options and locating the 'Pages' section again, where you will find the link once your site has been published.
 
 ### Forking the GitHub Repository
 
 By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
 
-1. Login to GitHub
-2. Locate the repository, you can use a link you have been provided with or use the search function in the top left of the screen
-3. In the top right hand corner of the page locate and click the 'fork' button
-4. Near the bottom of the page click the green button that says 'Create Fork'
-5. You should now have a copy of the original repository in your GitHub account
+1. Login to GitHub.
+2. Locate the repository, you can use a link you have been provided with or use the search function in the top left of the screen.
+3. In the top right hand corner of the page locate and click the 'fork' button.
+4. Near the bottom of the page click the green button that says 'Create Fork'.
+5. You should now have a copy of the original repository in your GitHub account.
 
 ### Making a Local Clone
 
-1. Login to GitHub
-2. Locate the repository, you can use a link you have been provided with or use the search function in the top left of the screen
-3. Near the top of the repository click the green 'Code' button
-4. To clone the repository using HTTPS, under HTTPS copy the link provided
-5. Open the terminal in your code editor 
-6. Change the current working directory to the location where you want the cloned directory to be made
-7. Type git clone, and then paste the URL you copied in Step 3
-8. Press Enter. Your local clone should be created
+1. Login to GitHub.
+2. Locate the repository, you can use a link you have been provided with or use the search function in the top left of the screen.
+3. Near the top of the repository click the green 'Code' button.
+4. To clone the repository using HTTPS, under HTTPS copy the link provided.
+5. Open the terminal in your code editor. 
+6. Change the current working directory to the location where you want the cloned directory to be made.
+7. Type git clone, and then paste the URL you copied in Step 3.
+8. Press Enter. Your local clone should be created.
 
 [Back to top](#title)  
 
@@ -406,17 +405,17 @@ By forking the GitHub Repository we make a copy of the original repository on ou
 ### Code
 
 -   Social Media Integration for Facebook, LinkedIn & Google - Code from [Abi Harrison Meta Tags Webinar](https://www.youtube.com/watch?v=t-4qqmikIqk).
--   Scroll Bar Up Button - Advice on styling scroll bar buttons found on Stack Overflow [here](https://stackoverflow.com/questions/47576815/how-to-add-arrows-with-webkit-scrollbar-button)
+-   Scroll Bar Up Button - Advice on styling scroll bar buttons found on Stack Overflow [here](https://stackoverflow.com/questions/47576815/how-to-add-arrows-with-webkit-scrollbar-button).
 -   Tutorial for saving high scores to the local storage by James Q Quick found [here](https://www.youtube.com/watch?v=DFhmNLKwwGw).
 -   Advice for checking the value of an input field using javaScript for on Stack Overflow [here](https://stackoverflow.com/questions/3937513/javascript-validation-for-empty-input-field).
--   I found the code used to randomize an array in this [Sling Academy Article](https://www.slingacademy.com/article/;ways-to-shuffle-an-array-in-javascript/?utm_content=cmp-true.)
+-   I found the code used to randomize an array in this [Sling Academy Article](https://www.slingacademy.com/article/;ways-to-shuffle-an-array-in-javascript/?utm_content=cmp-true.).
 -   Method used to convert a HTML Collection to an array found [here](https://nikitahl.com/convert-array-like-collections-to-array/).
 -   [Bootstrap](https://getbootstrap.com/) was used for general page layout and styling.
 -   I found a solution to call a Bootstrap modal using javaScript on Stack Overflow [here](https://stackoverflow.com/questions/62827002/bootstrap-v5-manually-call-a-modal-mymodal-show-not-working-vanilla-javascrip). 
 -   I found an article for handling error in asynchronous code [here](https://wesbos.com/javascript/12-advanced-flow-control/71-async-await-error-handling).
 - I used code found on Stack Overflow [here](https://stackoverflow.com/questions/25070144/bootstrap-modal-removes-scroll-bar) to inherit the main pages scroll properties when a modal is launched.
 
-All other code was written by the developer
+All other code was written by the developer.
 
 ### Content
 
@@ -425,7 +424,7 @@ All other code was written by the developer
 
 ### Media
 
--   Logo - The logo was created using a [Google Font](https://fonts.google.com/specimen/Bungee+Spice?query=bungee) called Bungee Spice and two trophy emojis &#127942; rendered in HTML with code `&#127942;`
+-   Logo - The logo was created using a [Google Font](https://fonts.google.com/specimen/Bungee+Spice?query=bungee) called Bungee Spice and two trophy emojis &#127942; rendered in HTML with code `&#127942;`.
 -   Favicon The favicon was created using the same trophy emoji &#127942; and was then edited using [Pixlr E](https://pixlr.com/e/) to remove the background. I then used [CloudConverter](https://cloudconvert.com/) to covert from PNG to a .ico file.
 -   Background Image - The background image was sourced from [Freepik](https://www.freepik.com/free-vector/video-game-background-design_40127923.htm#query=retro%20game%20clouds%20and%20grass&position=12&from_view=search&track=ais).
 
@@ -433,8 +432,10 @@ All other code was written by the developer
 
 I 100% couldn't have completed this project on my own so would like to acknowledge the following people for their contributions, whether they know they helped or not...
 
--
--
--
+-   My Fiancé and children for their unwavering support.
+-   [Iris Smok](https://github.com/Iris-Smok) my cohort facilitator for her support and for checking in on me when I have had to take some time away from the keyboard.
+-   [Martina Terlevic](https://github.com/SephTheOverwitch) for her advice and support.
+-   The [Code Institute](https://codeinstitute.net/) student support for checking in on me when it seems I might have gone MIA.
+-   The people on my cohort for their support, encouragement and reviewing my project.
 
 [Back to top](#title)  
