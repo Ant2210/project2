@@ -156,7 +156,7 @@ The wireframes were creates using [Figma](https://www.figma.com/files/recents-an
 -   [Git](https://git-scm.com/) - For version control.
 -   [GitHub](https://github.com/) - To store website files and repository for the website.
 -   [Visual Studio Code](https://code.visualstudio.com/) - Was used as my code editor to write code, version control using git and pushing changes for storage to GitHub.
--   [Google Fonts](https://fonts.google.com/) - To import the fonts I chose for the website
+-   [Google Fonts](https://fonts.google.com/) - To import the fonts I chose for the website.
 -   Google Dev Tools - Built into the chrome browser to test features and design and troubleshoot as I went along as well as for testing later on, these sections of the website which were then edited myself inside of Visual Stdio Code.
 -   [Am I Responsive](https://amiresponsive.co.uk/) - To create the website mockup images at the top of the README.
 -   [Pixlr](https://pixlr.com/e/) - To edit images such as the favicon and website mockup.
