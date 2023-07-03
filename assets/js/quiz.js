@@ -53,7 +53,7 @@ const getDifficulty = () => {
                 break;
         }
     });
-}
+};
 
 /* Function that attempts to call the data from the external API to retrieve 
 questions matching the difficulty level set by the get difficulty function.

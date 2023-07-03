@@ -39,55 +39,97 @@ I then used a colour picker to select a backup background colour the same colour
 
 When Selecting the button colours I wanted something basic but vibrant that still sticks with the retro them but contrasts well against the blue colour. During the main quiz the buttons flash green for correct answers and red for incorrect answers which are fairly intuitive colours for this purpose.
 
-  -   ##### Colours Used
-
-        - Main colour theme - `#2290fd`
-        - Text colour - `#161616`
-        - Backup background colour - `#65D3F0`
-        - Button colour - `#ffdf29`
-        - Correct answer button colour - `#009D00`
-        - Incorrect answer button colour - `#ff0000`
+-   ##### Colours Used
+    - Main colour theme - `#2290fd`
+    - Text colour - `#161616`
+    - Backup background colour - `#65D3F0`
+    - Main Button colour - `#ffdf29`
+    - Correct answer button colour - `#009D00`
+    - Incorrect answer button colour - `#ff0000`
 
 #### Colour Accessibility
 			
 When deciding on the shade of blue and black to use, I used Coolors.co contract checker tool  which can be found [here](https://coolors.co/contrast-checker/000000-ffffff), to ensure the colours chosen met the WCAG 2.1 AA guidelines as minimum and AAA guidelines where possible.<br>
+
+I also checked the contract for the text against each button colour used. <br>
+
 For further information on these guidelines, you can visit the following link. [Web Content Accessibility Guidelines (WCAG) 2.1 (w3.org)](https://www.w3.org/TR/WCAG21/)
         
 
-  -   ##### Colour Palette and Results
-        Sample
-
-        Images here ->
+- ##### Colour Palette and Results
+    - Main Colour Theme - [Coolors Contrast Checker](https://coolors.co/contrast-checker/161616-2290fd)
+    <img src="./assets/testing/images/contrast1.webp" alt="Contrast check of text against main colour theme background">
+    - Main Button Colour - [Coolors Contrast Checker](https://coolors.co/contrast-checker/161616-ffdf29)
+    <img src="./assets/testing/images/contrast2.webp" alt="Contrast check of text against main button colour">
+    - Correct Button Colour - [Coolors Contrast Checker](https://coolors.co/contrast-checker/161616-009D00)
+    <img src="./assets/testing/images/contrast3.webp" alt="Contrast check of text against correct button colour">
+    - Incorrect Button Theme - [Coolors Contrast Checker](https://coolors.co/contrast-checker/161616-ff0000)
+    <img src="./assets/testing/images/contrast4.webp" alt="Contrast check of text against incorrect button colour">     
 
 
 #### Typography
-Fonts chosen and why including fallback font
+The main considerations for the font were again aesthetics and accessibility. In sticking with the retro video game theme, I found two suitable fonts on Google fonts. 
+
+- ##### Title / Heading
+
+    For the main Title/Heading I chose a font called Bungee Spice from Google Fonts which can be found [here](https://fonts.google.com/specimen/Bungee+Spice?query=bungee). This was mainly used for the aesthetic quality to create logo like title using HTML emojis also. This font wasn't used for anything else within the site. 
+
+ - ##### Main Font
+
+    The main font used throughout the rest of the page was a Google Font called Press Start 2P which can be found [here](https://fonts.google.com/specimen/Press+Start+2P?query=2p). This again was chosen for aesthetics and in keeping with the retro video game theme.
+
+ - ##### Fallback Font
+
+    For my fallback font I have opted for the Arial font, part of the sans-serif family. It is the most widely used font for both online and printed media. Arial is said to be one of the safest web fonts, and is available on all major operating systems. 
 
 
 #### Imagery
-        -   Where was imagery taken from
+
+ - ##### Background Image
+    The background image was sourced from Freepik and can be found [here](https://www.freepik.com/free-vector/video-game-background-design_40127923.htm#query=retro%20game%20clouds%20and%20grass&position=12&from_view=search&track=ais).
+
+- ##### Favicon
+    The favicon was created using a standard HTML emoji and was then edited using [Pixlr E](https://pixlr.com/e/) to remove the background. I then [CloudConverter](https://cloudconvert.com/) was used to covert from PNG to a .ico file.
+
+All other imagery on the website are basic emojis and inserted using the HTML Emoji References.
 
 
 ### Wireframes
+The wireframes were creates using [Figma](https://www.figma.com/files/recents-and-sharing?fuid=1196127801458429486)
 
-Images Here ->
+<img src="./assets/images/wireframes.webp" alt="Website wireframes">
 
 ### Features
 
--   Feature list
--   Feature list
--   Feature list
+-   Full responsive across all screen sizes
+-   Intuitive and easy to navigate either using the various buttons throughout the page.
+-   A "How To Play" section detailing the purpose of the quiz as well as how to play.
+-   A Leader Board which saves the users score to the local storage allowing them to keep track of their high scores.
+-   A Heads Up Display which shows the user which question they are on and how many they have left as well as their current score. 
+-   A difficulty selector allowing the user to select three levels of difficulty for the quiz.
+-   A quit button, allowing the user to quit the quiz and go back home at any point. This is also connected to a warning modal informing the user that their progress will not be saved if they choose to quit the quiz.
+-   A "Skip & Go Home" button allowing the user to skip saving their high score if they don't want to. 
+-   All questions are loaded at random from an external API, allowing for a large amount of questions without have them be saved locally to the site. 
+-   A loading screen which is shown whilst questions are being retrieved from the external API so the user isn't staring a blank page, or page with placeholder text. 
+-   An error modal which informs the user if there has been an issues whilst retrieving the questions from the external API.
+-   Another error modal that appears if the user tries to save their score without entering any text into the username field.
+-   A responsive footer with a link to the creators GitHub account.
 
 ### Future Features
 
--   Feature list
--   Feature list
--   Feature list
+-   I would like to implement a social share button so that users can share their scores with their friends on social media.
+-   I would like to implement some in game retro style audio to make the quiz more fun.
+-   I would like to implement either a database that holds the high scores or use an external API to with social features so that the users high scores can be made public and shared with friends via social media. 
 
 ### Accessibility
--   Accessibility considered
--   Accessibility considered
--   Accessibility considered
+-   The use of semantic HTML
+-   Ensuring the colours and text use meet accessibility standards set by [w3.org](https://www.w3.org/TR/WCAG21/)
+-   Ensuring all clickable buttons and links are tabbable using the keyboard
+-   Using descriptive alt tags on all images
+-   Using correct aria labels where necessary
+-   Being mindful in the creation of the design to ensure it is intuitive and as easy to navigate as possible
+
+
 
 [Back to top](#title)  
 [Back to contents](#contents)
@@ -95,13 +137,30 @@ Images Here ->
 ## Technologies Used
 
 ### Languages Used
-
-  -   HTML
-  -   CSS
+-   HTML
+-   CSS
+-   Vanilla javaScript
 
 ### Frameworks, Libraries & Programs Used
 
-  -   [Bootstrap](https://getbootstrap.com/) Version 5.3.0 - For...
+-   [Bootstrap](https://getbootstrap.com/) Version 5.3.0 - For the layout and framework of the website, it was also used to create the various modals which were then restyled to math the rest of the website
+-   [Can I Use](https://caniuse.com/) - To check browser support for website features
+-   [Cloud Convert](https://cloudconvert.com/) - To compress and convert images to webp
+-   [Coolors](https://coolors.co/) - To check contrast and accessibility of the colours I chose to use
+-   [Figma](https://www.figma.com/) - To create the wireframes 
+-   [Font Awesome](https://fontawesome.com/) - Used for the GitHub icon used in the footer button
+-   [Git](https://git-scm.com/) - For version control
+-   [GitHub](https://github.com/) - To store website files and repository for the website
+-   [Visual Studio Code](https://code.visualstudio.com/) - Was used as my code editor to write code, version control using git and pushing changes for storage to GitHub
+-   [Google Fonts](https://fonts.google.com/) - To import the fonts I chose for the website
+-   Google Dev Tools - Built into the chrome browser to test features and design and troubleshoot as I went along as well as for testing later on
+sections of the website which were then edited myself inside of GitPod
+-   [Am I Responsive](https://amiresponsive.co.uk/) - To create the website mockup images at the top of the README
+-   [Pixlr](https://pixlr.com/e/) - To edit images such as the favicon and website mockup.
+-   Lighthouse - Built into Google Dev Tools for testing
+-   [W3C](https://www.w3.org/) - To validate and test HTML and CSS code
+-   [JSHint](https://jshint.com/) - To validate and text javaScript code
+-   [Open Trivia Database](https://opentdb.com/) - Is the external API used to retrieve the questions for the quiz.
 
 
 [Back to top](#title)  
@@ -113,56 +172,78 @@ Images Here ->
 
 Extensive testing was carried out throughout the life cycle of this project. As well as all of the documented testing below I asked friends and family to use the site and tell me what was and wasn't working. 
 
--   Homepage
-    -   Bug 1
-    -   Bug 2
+### Bugs
 
--   Quiz Page
-    -   Bug 1
-    -   Bug 2
+-   Bug 1: The "For each" method in javaScript was not working on the choices buttons as it was a HTML collection not an Array. I found a method to convert a HTML Collection to an array [here](https://nikitahl.com/convert-array-like-collections-to-array/).
+
+-   Bug 2: The quiz continuously looped through questions because the availableQuestions variable was being set every time a new question was requested. I moved this section to the startGame function so it is only called once. This was eventually moved inside the callAPI function when I was reformatting the code to make it as efficient as possible.
+
+-   Bug 3: If the user clicked quick enough they could click multiple answers on the same question, which effected the game progress and score. I separated the checkAnswer function to an awaitAnswer function where the event listener is added and then a checkAnswer function where the event listener is removed before proceeding the check the correct answer and progressing with the rest of the game. 
+
+-   Bug 4: If a scroll bar is present on the page when a modal is opened it is no longer centered. I found solution [here](https://stackoverflow.com/questions/25070144/bootstrap-modal-removes-scroll-bar) but found no other way other than using the !important tag in CSS to override the standard bootstrap styling of the modal.
+
+-   Bug 5: During manual testing I found the error handling message wasn’t launching as expected. This led me to research a method that caught all errors and console log them correctly whilst displaying the error modal to the user.  Try/Catch Method found [here](https://wesbos.com/javascript/12-advanced-flow-control/71-async-await-error-handling).
+
+-   Bug 6: When there are no saved scores a default message is saved on the leader board which was originally incorrectly placed inside the `<ol>` tags. When I moved this text outside of the `<ol>` tags it was no longer being replaced by the high scores list but appearing above it. I altered the code slightly so that the content of the whole model body was replaced by the new list which solved this issue.
+
 
 The site has altogether in one way or another been used and tested on the following devices...
 
--   Device 1
--   Device 2
+-   Google Pixel 7 - Chrome
+-   HP Elitebook (Windows) - Chrome, Edge and Firefox
+-   Iphone SE - Safari and Chrome
+-   Ipad - Safari and Chrome
+-   Macbook Pro - Safari and Chrome
+-   Samsung Galaxy Tab S7 - Chrome and Samsung Browser
+-   Samsung S23 Ultra - Edge, Chrome, Firefox and Samsung Browser
 
 ### Testing User Stories from User Experience (UX) Section
 
-#### First Time Visitor Goals
+-   #### First Time Visitor Goals
 
-1.  As a First Time Visitor, I want to...
-    -	How was this achieved
-    - Image here ->
-1.  As a First Time Visitor, I want to...
-    -	How was this achieved
-    - Image here ->
-2.  As a First Time Visitor, I want to...
-    -	How was this achieved
-    - Image here ->
+    -  As a first time visitor, I want to find out find out what the quiz is about and how to play.
+        -   This is accomplished by placing a prominent button on the home screen labelled "How To Play" which gives the user some info about the quiz as well as how the quiz works. 
+        <img src="./assets/testing/images/homescreenscreenshot.webp" alt="Website home screen screenshot">
+        <img src="./assets/testing/images/howtoplayscreenshot.webp" alt="Website how to play modal screenshot">
+        <img src="./assets/testing/images/gameplayscreenshot.webp" alt="Website game play screenshot">
+        <img src="./assets/testing/images/endscreenshot.webp" alt="Website end screen screenshot">
 
-#### Returning Visitor Goals
+    -  As a first time visitor, I want to be able to navigate the site quickly and easily, it should be intuitive and obvious what to do next.
+        -   This is accomplished by having the buttons labelled as clearly as possible, but also by the use of the "How To Play" modal which gives clear instructions on how to navigate through the quiz. There are also various modals that provide the user with prompts if there is any errors or if they try to quit the quiz mid game.
+        <img src="./assets/testing/images/quitscreenshot.webp" alt="Website quit modal screenshot">
+        <img src="./assets/testing/images/thankyouscreenshot.webp" alt="Website thank you modal screenshot">
+        <img src="./assets/testing/images/errorscreenshot.webp" alt="Website error modal screenshot">
+        <img src="./assets/testing/images/whoopsscreenshot.webp" alt="Website missing username modal screenshot">
 
-1.  As a returning Visitor, I want to...
-    -	How was this achieved
-    - Image here ->
-2.  As a returning Visitor, I want to...
-    -	How was this achieved
-    - Image here ->
-3.  As a returning Visitor, I want to...
-    -	How was this achieved
-    - Image here ->
+    -  As a First Time Visitor, I want to be able to play the quiz any time and on any of my internet connected devices and therefore responsive. 
+        -   This is accomplished by ensuring responsive design so that the quiz looks good and is usable on devices of all sizes.
+            -   Tablet
+            <img src="./assets/testing/images/tabletscreenshot.webp" alt="Website home screen tablet display screenshot">
+            <img src="./assets/testing/images/tabletgameplayscreenshot.webp" alt="Website game play tablet display screenshot">
+            <img src="./assets/testing/images/tablethowtoscreenshot.webp" alt="Website how to modal tablet display screenshot">
+            -   Mobile
+            <img src="./assets/testing/images/phonescreenshot.webp" alt="Website home screen phone display screenshot">
+            <img src="./assets/testing/images/phonegameplayscreenshot.webp" alt="Website game play phone display screenshot">
+            <img src="./assets/testing/images/phonehowtoscreenshot.webp" alt="Website how to modal phone display screenshot">
+    -  As a First Time Visitor, I want the quiz to be fun and inviting. 
+        -   This is accomplished purely through design, and whilst people will have different preferences I have tried to appeal to games by using a retro gaming style them throughout the project.
 
-#### Frequent User Goals
+-   #### Returning Visitor Goals
 
-1.  As a frequent user, I want to...
-    -	How was this achieved
-    - Image here ->
-2.  As a frequent user, I want to...
-    -	How was this achieved
-    - Image here ->
-3.  As a frequent user, I want to...
-    -	How was this achieved
-    - Image here ->
+    - As a returning visitor, I want to be able to keep track of my previous scores so I can try and improve upon it.
+        -   This is accomplished by the use of the leader board which can be found on the home screen. 
+        <img src="./assets/testing/images/leaderboardnoscoresscreenshot.webp" alt="Website leader board with no scores modal screenshot">
+        <img src="./assets/testing/images/leaderboardwithscoresscreenshot.webp" alt="Website leader board with scores modal screenshot">
+    -  As a returning visitor, I want to be able to adjust the difficulty as my knowledge improves.
+        -   This is accomplished by the use of the difficulty selector which is presented at the start of every quiz.
+        <img src="./assets/testing/images/difficultyscreenshot.webp" alt="Website leader board with scores modal screenshot">
+    -  As a returning visitor, I don't want to answer the same questions over and over so as not to get board of the quiz too quickly.
+        -   This is accomplished by the use of an external API which serves randomly selected questions from a large database of questions. Whilst it doesn't state on the website specifically that the questions are pulled at random on each request, testing has revealed that this is the case and only on a few occasions have I received a few of the same questions from previous games. 
+
+-   #### Frequent User Goals
+
+    - A frequent users requirements would be much the same as a returning visitor given fairly basic nature of the quiz. A frequent user may however want to be able to compare scores with friends.
+        -   This could be accomplished by implementing some of the [Future Features](#future-features) mentioned above such as adding a social share button and public leader board, which I hope are features I can work on at the end of the course.
 
 ### Further Testing
 <br>
@@ -190,6 +271,28 @@ The site has altogether in one way or another been used and tested on the follow
 <br>
 
 #### CSS Validator - [W3C](https://jigsaw.w3.org/css-validator/)
+1.   Homepage
+
+[Homepage HTML Validator Test 1](www.google.com)
+
+[Homepage HTML Validator Test 2](www.google.com)
+
+-   Issue 1
+-   Issue 2
+
+
+2.   Quiz Page
+
+[Portfolio Page HTML Validator Test 1](www.google.com)
+
+[Portfolio Page HTML Validator Test 2](www.google.com)
+
+-   Issue 1
+-   Issue 2
+
+<br>
+
+#### JSHint Validator - [W3C](https://jshint.com/)
 1.   Homepage
 
 [Homepage HTML Validator Test 1](www.google.com)
@@ -253,17 +356,6 @@ The site has altogether in one way or another been used and tested on the follow
 -   Issue 1
 -   Issue 2
 
-<br>
-
-### Bugs
-1. Bug 1
-2. Bug 2
-3. Bug 3
-
-### Unsolved Bugs
-1. Bug 1
-2. Bug 2
-3. Bug 3
 
 [Back to top](#title)  
 [Back to contents](#contents)

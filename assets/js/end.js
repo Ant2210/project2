@@ -15,7 +15,7 @@ medal emoji if the score is more than 0.
 */
 const finalScoreEmoji = document.getElementsByClassName("final-score-emoji");
 Array.from(finalScoreEmoji).forEach((emoji) => {
-    parseInt(mostRecentScore) === 0 ? emoji.innerHTML = "&#128557;" : emoji.innerHTML = "&#127941;";
+    emoji.innerHTML = parseInt(mostRecentScore) === 0 ? "&#128557;" : emoji.innerHTML = "&#127941;";
 });
 
 /* Tutorial found here -> https://www.youtube.com/watch?v=DFhmNLKwwGw
