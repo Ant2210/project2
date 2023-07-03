@@ -89,7 +89,7 @@ The main considerations for the font were again aesthetics and accessibility. In
     The background image was sourced from Freepik and can be found [here](https://www.freepik.com/free-vector/video-game-background-design_40127923.htm#query=retro%20game%20clouds%20and%20grass&position=12&from_view=search&track=ais).
 
 - ##### Favicon
-    The favicon was created using a standard HTML emoji and was then edited using [Pixlr E](https://pixlr.com/e/) to remove the background. I then [CloudConverter](https://cloudconvert.com/) was used to covert from PNG to a .ico file.
+    The favicon was created using a standard HTML emoji and was then edited using [Pixlr E](https://pixlr.com/e/) to remove the background. I then used [CloudConverter](https://cloudconvert.com/) to covert from PNG to a .ico file.
 
 All other imagery on the website are basic emojis and inserted using the HTML Emoji References.
 
@@ -405,23 +405,29 @@ By forking the GitHub Repository we make a copy of the original repository on ou
 
 ### Code
 
--   REMOVE CONTENTS
--   
--   
+-   Social Media Integration for Facebook, LinkedIn & Google - Code from [Abi Harrison Meta Tags Webinar](https://www.youtube.com/watch?v=t-4qqmikIqk).
+-   Scroll Bar Up Button - Advice on styling scroll bar buttons found on Stack Overflow [here](https://stackoverflow.com/questions/47576815/how-to-add-arrows-with-webkit-scrollbar-button)
+-   Tutorial for saving high scores to the local storage by James Q Quick found [here](https://www.youtube.com/watch?v=DFhmNLKwwGw).
+-   Advice for checking the value of an input field using javaScript for on Stack Overflow [here](https://stackoverflow.com/questions/3937513/javascript-validation-for-empty-input-field).
+-   I found the code used to randomize an array in this [Sling Academy Article](https://www.slingacademy.com/article/;ways-to-shuffle-an-array-in-javascript/?utm_content=cmp-true.)
+-   Method used to convert a HTML Collection to an array found [here](https://nikitahl.com/convert-array-like-collections-to-array/).
+-   [Bootstrap](https://getbootstrap.com/) was used for general page layout and styling.
+-   I found a solution to call a Bootstrap modal using javaScript on Stack Overflow [here](https://stackoverflow.com/questions/62827002/bootstrap-v5-manually-call-a-modal-mymodal-show-not-working-vanilla-javascrip). 
+-   I found an article for handling error in asynchronous code [here](https://wesbos.com/javascript/12-advanced-flow-control/71-async-await-error-handling).
+- I used code found on Stack Overflow [here](https://stackoverflow.com/questions/25070144/bootstrap-modal-removes-scroll-bar) to inherit the main pages scroll properties when a modal is launched.
 
 All other code was written by the developer
 
 ### Content
 
--
--
--
+-   Static content for this website was all written by the developer.
+-   All questions and answers for the quiz are obtained from the [Open Trivia Database](https://opentdb.com/) API. 
 
 ### Media
 
--
--
--
+-   Logo - The logo was created using a [Google Font](https://fonts.google.com/specimen/Bungee+Spice?query=bungee) called Bungee Spice and two trophy emojis &#127942; rendered in HTML with code `&#127942;`
+-   Favicon The favicon was created using the same trophy emoji &#127942; and was then edited using [Pixlr E](https://pixlr.com/e/) to remove the background. I then used [CloudConverter](https://cloudconvert.com/) to covert from PNG to a .ico file.
+-   Background Image - The background image was sourced from [Freepik](https://www.freepik.com/free-vector/video-game-background-design_40127923.htm#query=retro%20game%20clouds%20and%20grass&position=12&from_view=search&track=ais).
 
 ### Acknowledgements
 
